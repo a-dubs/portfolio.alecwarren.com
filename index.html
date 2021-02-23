@@ -14,7 +14,7 @@
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.1/jquery.mobile.min.js" crossorigin="anonymous"></script> -->
         <!-- Import Bootstrap -->   
         <link rel="stylesheet" href="custom bootstrap/custom bootstrap.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <!-- Import & Link Other Files -->
         <link rel="stylesheet" href="util.css" />
         <link rel="stylesheet" href = "gallery-style.css"> 
@@ -28,78 +28,322 @@
         <!-- \<base href="http://www._________.com/"> -->
     </head>
     <body>
-        <!--<nav id = "tb" style="background-color: red; height:60px">
-            <div class="row col-24 col-sm-20 col-md-18 col-xl-14 col-xxl-12 h-center no-gutters" style = "background-color: green;height:60px">
-                <a href="" class="tbb col" style="display: block; text-align: center;">Page Name</a>
-                <a href="" class="tbb col" style="display: block; text-align: center;">Page Name</a>
-                <a href="" class="tbb col" style="display: block; text-align: center;">Page Name</a>
-                <a href="" class="tbb col" style="display: block; text-align: center;">Page Name</a>
-            </div>
-        </nav>-->
+        
+
+        
+
 
         <div id = "main">
             
             <div id="landing">
-                <h1>Portfolio</h1>
-                <h2>Very brief description / tag line </h2>
+                <h1> My Portfolio</h1>
+                <div class="bar"></div>
+                <h2>Past, Current, and Future Projects </h2>
             </div>
 
-            <div class="sect" id="sect-name-1">
-                <!-- Science Fair -->
-                <!-- Sadie Spot Server -->
-                <!-- Think Nexus Design -->
-                <!-- Modding Keyboard -->
-                <!-- Custom Spotify App -->
-                <!-- Subwoofer -->
-                <!-- Squat rack -->
-                <!-- Window Resizer -->
-                <!-- K9 supps? -->
-                <!-- This website! :D -->                
-                <h2></h2>
-                <div class="container project">
-                    <div stle="background-image: url('');" class = "img thumbnail"/>
-                    <h3>Project Title</h3>
-                    <h4>Subtitle / Blurb</h4>
-                    <div id="exp" class="btn btn-danger" onclick="expandProject();">Expand</div>
-                    <div class = "expand-area row justify-content-center expanded">
-                        <div class = "sticker label-creative">Creative</div>
-                        <script src="gallery-GalleryName-script.js"></script>
-                        <div id="GalleryName" resize = "resizeGallery();" class="gallery col-20 col-md-8 col-lg-8 g-0">
-                            <ul id="carousel">
-                                <li class="slide" style="background-color:red;"></li>
-                                <li class="slide" style="background-color:green;"></li>
-                                <li class="slide" style="background-color:blue;"></li>
-                                <li class="slide" style="background-color:purple;"></li>
-                                <li class="slide" style="background-color:grey;"></li>
-                                <li class="slide" style="background-color:teal;"></li>
-                            </ul> 
-                            <div id="left" class="gallery-btn notselected">
-                                <img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-24-512.png" class="vert_spacer" id="icon" />
-                            </div>
-                            <div id="right" class="gallery-btn notselected">
-                                <img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-22-512.png" class="vert_spacer" id="icon" />
-                            </div>
-                            <div class="island" id="bar_island">
-                                <ul id="bar_island_ul"></ul>
-                            </div>
-                            <div id="fs" class="invisible h-center-a btn btn-light"> Fullscreen </div>
+
+
+            <!-- <div class="taskbar container">
+                <h3>Filter by category</h3>
+                <div class = "row justify-content-around g-0">
+                <div id="electronics" class = "filter electronics unselected col-11 col-md-4">Electronics</div>
+                <div id="fabrication" class = "filter fabrication unselected col-11 col-md-4">Fabrication</div>
+                <div id="programming" class = "filter programming unselected col-11 col-md-4">Programming</div>
+                <div id="creative" class = "filter creative unselected col-11 col-md-4">Creative</div> 
+                </div>
+            </div>  -->
+
+
+
+            <!-- Science Fair -->
+            <!-- Sadie Spot Server -->
+            <!-- Think Nexus Design -->
+            <!-- Modding Keyboard -->
+            <!-- Custom Spotify App -->
+            <!-- Subwoofer -->
+            <!-- Squat rack -->
+            <!-- Window Resizer -->
+            <!-- K9 supps? -->
+            <!-- This website! :D -->                
+
+            <!-- TEMPLATE -->
+            <!--              
+            <div id="project-PROJECTID" class="container project creative programming">
+                // <div class = "labels">     
+                    // <div class = "sticker label-creative">Creative</div>
+                    // <div class = "sticker label-fabrication">Fabrication</div>
+                // </div> 
+                <div class="collapse-area row justify-content-between g-0">
+                    <div class="title col-22 col-md-18 offset-1">
+                        <div style="background-image: url('');" class = "img thumbnail"></div>
+                        <h3>Project Title Wow so Long OMG</h3>
+                        <h4>Mmm 'YY - Mmm 'YY</h4>
+                    </div>
+                    <div class="button-container col-24 col-md-5 align-self-center">
+
+                        <div class="expand-btn center-a btn btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#collapser-PROJECTID" data-bs-target="collapser-PROJECTID">
+                            &nbsp;Expand&nbsp;
                         </div>
-                        
-                        <ul class="col-20 col-md-13 offset-md-1 col-lg-13">
-                            <li> > Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi. </li>
-                            <li> > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </li>
+                    </div>
+                    
+                </div>
+                   
+                <div id = "collapser-PROJECTID" class="collapser collapse" >
+                    <div class = "expand-area row g-0 justify-content-center "> 
+                        <script src="gallery-GalleryName-script.js"></script>
+                        <div id="GalleryName" class="gallery col-24 col-sm-20 col-md-8 g-0">
+                            <ul id="carousel">
+                                <li class="slide cov" style="background-image: url('');"></li>
+                                <li class="slide cov" style="background-image: url('');"></li>
+                                <li class="slide cov" style="background-image: url('');"></li>
+                            </ul> 
+                            <div id="left" class="gallery-btn notselected"> <img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-24-512.png" class="vert_spacer" id="icon" /></div>
+                            <div id="right" class="gallery-btn notselected"><img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-22-512.png" class="vert_spacer" id="icon" /></div>
+                            <div class="island" id="bar_island"> <ul id="bar_island_ul"></ul> </div>
+                             // <div id="fs" class="invisible h-center-a btn btn-light"> Fullscreen </div> 
+                        </div>                        
+                        <ul class="col-23 desc    col-sm-19 col-md-14 ">
+                            <li> > Designed and implemented a custom REST API using Python and Flask. </li>
+                            <li> > This public facing API connects various personal projects over the internet, allowing for a plethora of data to be retrieved in a neat and useful format, and for various actions on the server and any other application integrated into the server via API to be executed remotely </li>
                             <li> > Cras ornare tristique elit.</li>
                             <li> > Donec quis dui at dolor tempor interdum.</li>
-                            <!-- completed? in progress? -->
-                            <!-- Planned Changes & Additions: -->
                         </ul>
-                        <div id="github" class="btn btn-dark"><a href="https://github.com/AlecWarren19">See on GitHub</a></div>
+                        // <ul> (or maybe even <ol>??) of Upcoming changes / todo for this project ?
+                        <div id="c2a" class="btn btn-dark"><a target="_blank" href="https://github.com/AlecWarren19">See on GitHub</a></div>
                     </div>
+                </div> -->
+
+            <!-- AUTONOMOUS INTERSECTION SIMULATION // autonomous-intersection -->
+            <div id="project-autonomous-intersection" class="container project"> 
+                <div class="collapse-area row justify-content-between g-0">
+                    <div class="title col-22 col-md-18 offset-1">
+                        <div style="background-image: url('');" class = "img thumbnail"></div>
+                        <h3> Four-Way Autonomous Intersection Simulation </h3>
+                        <h4>Oct '17 - May '19</h4>
+                    </div>
+                    <div class="button-container col-24 col-md-5 align-self-center">
+
+                        <div class="expand-btn center-a btn btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#collapser-autonomous-intersection" data-bs-target="collapser-autonomous-intersection">
+                            &nbsp;Expand&nbsp;
+                        </div>
+                    </div>
+                    
                 </div>
+                   
+                <div id = "collapser-autonomous-intersection" class="collapser collapse" >
+                    <div class = "expand-area row g-0 justify-content-center "> 
+                        <script src="gallery-autonomous-intersection-script.js"></script>
+                        <div id="autonomous_intersection_gallery" class="gallery col-24 col-sm-20 col-md-8 g-0">
+                            <ul id="carousel">
+                                <li class="slide cov"><video loop controls autoplay muted class="center-a" style="overflow:hidden; height: inherit; width: inherit;">  <source src="projects/autonomous-intersection/Final Display Video.mp4" type="video/mp4"></video><h3 class="caption h-center-a"><div> DEMO VIDEO </div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/autonomous-intersection/flowchart.png');"><h3 class="caption h-center-a"><div> A.I. ALGORITHM </div></h3></li>
+                                <!-- <li class="slide cov" style="background-image: url('projects/autonomous-intersection/');"><h3 class="caption h-center-a"><div> CAPTION </div></h3></li> -->
+                            </ul> 
+                            <div id="left" class="gallery-btn notselected v-center-a" style="height: 50%; top:50%;"> <img src="l-arrow.png" class="center-a" id="icon" /></div>
+                            <div id="right" class="gallery-btn notselected v-center-a" style="height: 50%; top:50%;"><img src="r-arrow.png" class="center-a" id="icon" /></div>
+                            <div class="island" id="bar_island"> <ul id="bar_island_ul"></ul> </div>
+                        </div>                        
+                        <ul class="col-23 desc    col-sm-19 col-md-14 ">
+                            <li> > Created a realistic and accurate simulation from scratch of a four-way intersection with no stop signs or traffic lights. Then developed and implemented an autonomous AI for self-driving vehicles to eneable them to regulate their speed and pass through the intersection without any collisions. </li>
+                            <li> > Created Visual Studio 2017 using C#. Features fully realistic physics derived from real world data of the Tesla Model S. The world is dynamically drawn using nearly 50 global variables such that a myriad of different scenarious can be simulated. </li>
+                            <li> > This AI unique from any other existing solutions because it is fully decentralized. There is no central server controlling all the vehicles, so each vehicle makes its own decisions. </li>
+                            <li> > Inspired by "Swarm Intelligence" - all the cars intercommunicate so they can accurately predict where collisions would occur and then decide how to avoid them. </li>
+
+                            
+                        </ul>
+                        <div id="c2a" class="btn btn-dark"><a target="_blank" href="https://github.com/AlecWarren19/autonomous-intersection">See on GitHub</a></div>
+                    </div>
+                </div> 
             </div>
-            <div class="sect" id="sect-name-2">
-                <h1></h1>
+
+
+            <!-- THINK NEXUS DESING WEBSITE // nexus-website -->
+            <div id="project-nexus-website" class="container project"> 
+                <div class="collapse-area row justify-content-between g-0">
+                    <div class="title col-22 col-md-18 offset-1">
+                        <div style="background-image: url('');" class = "img thumbnail"></div>
+                        <h3>Think Nexus Design Website</h3>
+                        <h4>Nov '16 - Present</h4>
+                    </div>
+                    <div class="button-container col-24 col-md-5 align-self-center">
+
+                        <div class="expand-btn center-a btn btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#collapser-nexus-website" data-bs-target="collapser-nexus-website">
+                            &nbsp;Expand&nbsp;
+                        </div>
+                    </div>
+                    
+                </div>
+                   
+                <div id = "collapser-nexus-website" class="collapser collapse" >
+                    <div class = "expand-area row g-0 justify-content-center "> 
+                        <script src="gallery-nexus-website-script.js"></script>
+                        <div id="nexus_website_gallery" class="gallery col-24 col-sm-20 col-md-8 g-0">
+                            <ul id="carousel">
+                                <li class="slide cov" style="background-image: url('projects/nexus-website/home.png');"><h3 class="caption h-center-a"><div> home </div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/nexus-website/services.png');"><h3 class="caption h-center-a"><div> services </div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/nexus-website/projects.png');"><h3 class="caption h-center-a"><div> projects </div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/nexus-website/about.png');"><h3 class="caption h-center-a"><div> about </div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/nexus-website/contact.png');"><h3 class="caption h-center-a"><div> contact </div></h3></li>
+                            </ul> 
+                            <div id="left" class="gallery-btn notselected"> <img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-24-512.png" class="vert_spacer" id="icon" /></div>
+                            <div id="right" class="gallery-btn notselected"><img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-22-512.png" class="vert_spacer" id="icon" /></div>
+                            <div class="island" id="bar_island"> <ul id="bar_island_ul"></ul> </div>
+                        </div>                        
+                        <ul class="col-23 desc col-sm-19 col-md-14 ">        
+                            <li> > My first fully fledged website. First commercial website, first fully responsive website, and first public website. </li>
+                            <li> > Developed from scratch using HTML, CSS, JavaScript, and jQuery. </li>
+                            <li> > Made website fully responsive using breakpoints for the four different general categories of screen sizes: mobile, split screen, HD desktop, and Full-HD desktop. </li>
+                            <li> > Published initial site at the end of the 2016 and I have been slowly upgrading it ever since. </li>
+                            <li> > Released major update, site V2.0, in 2019 giving the website a completely unique mobile site layout, featuring an entirely different taskbar and footer from the desktop site. </li>
+                        </ul>
+                        <div id="c2a" class="btn btn-dark"><a target="_blank" href="http://ThinkNexusDesign.com">Visit ThinkNexusDesign</a></div>
+                    </div>
+                </div> 
             </div>
+
+            <!-- Fully Modded Mechanical Keyboard  // modded-keyboard -->
+            <div id="project-modded-keyboard" class="container project"> 
+                <div class="collapse-area row justify-content-between g-0">
+                    <div class="title col-22 col-md-18 offset-1">
+                        <div style="background-image: url('');" class = "img thumbnail"></div>
+                        <h3>Fully Modded Mechanical Keyboard </h3>
+                        <h4>Dec '20 - Jan '21</h4>
+                    </div>
+                    <div class="button-container col-24 col-md-5 align-self-center">
+
+                        <div class="expand-btn center-a btn btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#collapser-modded-keyboard" data-bs-target="collapser-modded-keyboard">
+                            &nbsp;Expand&nbsp;
+                        </div>
+                    </div>
+                    
+                </div>
+                   
+                <div id = "collapser-modded-keyboard" class="collapser collapse" >
+                    <div class = "expand-area row g-0 justify-content-center "> 
+                        <script src="gallery-modded-keyboard-script.js"></script>
+                        <div id="modded_keyboard_gallery" class="gallery col-24 col-sm-20 col-md-8 g-0">
+                            <ul id="carousel">
+                                <li class="slide cov" style="background-image: url('projects/modded-keyboard/switches_closeup2.JPG');"><div class="caption h-center-a"><div>New Switches</div></div></li>
+                                <li class="slide cov" style="background-image: url('projects/modded-keyboard/after_kb.JPG');"><h3 class="caption h-center-a"><div>Final Result</div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/modded-keyboard/switches_closeup3.JPG');"><div class="caption h-center-a"><div>New Switches</div></div></li>
+                                <li class="slide cov" style="background-image: url('projects/modded-keyboard/bottom_of_pcb.JPG');"><h3 class="caption h-center-a"><div>The PCB</div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/modded-keyboard/before_kb.JPG');"><div class="caption h-center-a"><div>Old Keyboard</div></div></li>
+                                <li class="slide cov" style="background-image: url('projects/modded-keyboard/before_switches.JPG');"><div class="caption h-center-a"><div>Old Switches</div></div></li>
+                                <li class="slide cov" style="background-image: url('projects/modded-keyboard/after_kb2.JPG');"><div class="caption h-center-a"><div>Final Result</div></div></li>
+                            </ul> 
+                            <div id="left" class="gallery-btn notselected"> <img src="l-arrow.png" class="vert_spacer" id="icon" /></div>
+                            <div id="right" class="gallery-btn notselected"><img src="r-arrow.png" class="vert_spacer" id="icon" /></div>
+                            <div class="island" id="bar_island"> <ul id="bar_island_ul"></ul> </div>
+                        </div>                        
+                        <ul class="col-23 desc desc col-sm-19 col-md-14 ">
+                            <li> > Fully modified my cheap yet surprisingly reliable 75% RGB mechanical keyboard </li>
+                            <li> > Transfered the o-rings from the old keycaps to the new blank fog-white transluscent keycaps </li>
+                            <li> > Removed all the old switches, then desoldered all ~150 hot-swap sockets which were too small for the new switches, and then soldered in all the new Gateron Clear linear switches. </li>
+                            <li> > Cleaned the plate and case, added sound dampening foam to inside the keyboard, and added dampening to the various loose stabalizers to reduce noise. </li>
+                            <li> > Had to do 6 pcb trace and throughhole repairs from to damage sustained after desoldering and resoldering due to the pcb was super cheap and didnt withstand being desoldered and  </li>
+                            <li> > Took roughly 25 hours and 300 solders. Worth it! Looks and feels infinitely better. </li>
+                        </ul>
+                        <div id="c2a" class="btn btn-dark"><a target="_blank" href="https://github.com/AlecWarren19">See on GitHub</a></div>
+                    </div>
+                </div> 
+            </div>
+
+
+            <!-- TETRIS MIN-MAX AI & CUSTOM SIMULATION // tetris-ai -->
+            <!-- <div id="project-tetris-ai" class="container project"> 
+                <div class="collapse-area row justify-content-between g-0">
+                    <div class="title col-22 col-md-18 offset-1">
+                        <div style="background-image: url('');" class = "img thumbnail"></div>
+                        <h3>Tetris Min-Max AI & Simulation</h3>
+                        <h4>Nov '20 - Dec '20</h4>
+                    </div>
+                    <div class="button-container col-24 col-md-5 align-self-center">
+
+                        <div class="expand-btn center-a btn btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#collapser-tetris-ai" data-bs-target="collapser-tetris-ai">
+                            &nbsp;Expand&nbsp;
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div id = "collapser-tetris-ai" class="collapser collapse" >
+                    <div class = "expand-area row g-0 justify-content-center "> 
+                        <script src="gallery-tetris-ai-script.js"></script>
+                        <div id="tetris_ai_gallery" class="gallery col-24 col-sm-20 col-md-8 g-0">
+                            <ul id="carousel">
+                                <li class="slide cov" style="background-image: url('projects/PROJECT_ID/');"><h3 class="caption h-center-a"><div> CAPTION </div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/PROJECT_ID/');"><h3 class="caption h-center-a"><div> CAPTION </div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/PROJECT_ID/');"><h3 class="caption h-center-a"><div> CAPTION </div></h3></li>
+                            </ul> 
+                            <div id="left" class="gallery-btn notselected"> <img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-24-512.png" class="vert_spacer" id="icon" /></div>
+                            <div id="right" class="gallery-btn notselected"><img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-22-512.png" class="vert_spacer" id="icon" /></div>
+                            <div class="island" id="bar_island"> <ul id="bar_island_ul"></ul> </div>
+                        </div>                        
+                        <ul class="col-23 desc    col-sm-19 col-md-14 ">
+                            
+                            <li> > Created an accurate and faithful Tetris simulation using Python and the Tkinter interface that is playable by the user while also easily and seemlessly interfacing with the AI </li>
+                            <li> > Goal was to create a basic single agent online AI that can clear several levels on average as well as score well before inevitably losing. </li>
+                            <li> > Two different AIs were created, trained, and evaluated to examine if increased complexity in the AI is directly related to improved performance. </li>    
+                            <li> > Overall, both AIs functioned relatively well, but were wildly inconsistent - About 1 in 10 trials would result in the AI failing to even score a single point or it would score in the hundreds of thousands, clearing anywhere from levels 9-13. </li>
+                            <li> > In the end, the less complex algorithm was faster with near identical performance. </li>                        
+                        </ul>
+                        <div id="c2a" class="btn btn-dark"><a target="_blank" href="https://github.com/AlecWarren19">See on GitHub</a></div>
+                    </div>
+                </div> 
+            </div> -->
+
+            <!-- CUSTOM LOW-PROFILE SUBWOOFER BUILD // custom-sub -->
+            <!-- <div id="project-custom-sub" class="container project"> 
+                <div class="collapse-area row justify-content-between g-0">
+                    <div class="title col-22 col-md-18 offset-1">
+                        <div style="background-image: url('');" class = "img thumbnail"></div>
+                        <h3> Custom Low-Profile Subwoofer Box Build </h3>
+                        <h4>Jan '21</h4>
+                    </div>
+                    <div class="button-container col-24 col-md-5 align-self-center">
+
+                        <div class="expand-btn center-a btn btn-outline-dark" data-bs-toggle="collapse" data-bs-target="#collapser-custom-sub" data-bs-target="collapser-custom-sub">
+                            &nbsp;Expand&nbsp;
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div id = "collapser-custom-sub" class="collapser collapse" >
+                    <div class = "expand-area row g-0 justify-content-center "> 
+                        <script src="gallery-custom-sub-script.js"></script>
+                        <div id="custom_sub_gallery" class="gallery col-24 col-sm-20 col-md-8 g-0">
+                            <ul id="carousel">
+                                <li class="slide cov" style="background-image: url('projects/PROJECT_ID/');"><h3 class="caption h-center-a"><div> CAPTION </div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/PROJECT_ID/');"><h3 class="caption h-center-a"><div> CAPTION </div></h3></li>
+                                <li class="slide cov" style="background-image: url('projects/PROJECT_ID/');"><h3 class="caption h-center-a"><div> CAPTION </div></h3></li>
+                            </ul> 
+                            <div id="left" class="gallery-btn notselected"> <img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-24-512.png" class="vert_spacer" id="icon" /></div>
+                            <div id="right" class="gallery-btn notselected"><img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-22-512.png" class="vert_spacer" id="icon" /></div>
+                            <div class="island" id="bar_island"> <ul id="bar_island_ul"></ul> </div>
+                        </div>                        
+                        <ul class="col-23 desc    col-sm-19 col-md-14 ">
+                            <li> > Low profile custom sealed dual chamber subwoofer enclosure designed to fit under the couch in my dorm room made of 3/4" MDF </li>
+                            <li> > Used all car subwoofer components for better customizability, compactness, power, and cost effectiveness than traditional home theatre subwoofers. </li>
+                            <li> > Outer dimensions of box: 36" x 24" x 7.5" (WxLxH) </li>
+                            <li> > Shallow mount subwoofers used: 2x Skar Audio VD-12 500W RMS Dual 2Ω Voice Coils with 4.9" mounting depth. </li>
+                            <li> > Ran subwoofers' voice coils in series so their impedance became 4Ω each. Ran the subwoofers in parallel for a final impedance of 2Ω, the lowest impedance my cheap amplifier supports. </li>
+                            
+                        </ul>
+                        <div id="c2a" class="btn btn-dark"><a target="_blank" href="https://github.com/AlecWarren19">See on GitHub</a></div>
+                    </div>
+                </div> 
+            </div> -->
+
+
+
+
+
+
+
+        
         </div>
+            
+    
     </body>
 </html>

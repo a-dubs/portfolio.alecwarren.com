@@ -1,7 +1,7 @@
 $(function () {
 
 function GalleryName() {
-    var slidewidth = document.getElementById("GalleryName").offsetWidth;
+    var slidewidth = $("#GalleryName").width()
     var animationduration =600;
     // Comment the line below out if you do not want the automatic slide changing 
     var currentslide = 1;
@@ -173,6 +173,7 @@ function GalleryName() {
     }
     // adjust width of slides if browser window resizes
     $(window).resize(resizeGallery);
+    $("#GalleryName").resize(resizeGallery);
     document.getElementById("GalleryName").addEventListener("resize", resizeGallery);
 }
 GalleryName();
