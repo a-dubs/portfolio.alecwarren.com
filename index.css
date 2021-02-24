@@ -298,8 +298,9 @@
     overflow: hidden;
     position: relative;
     background-color: whitesmoke;
-    border: 1px solid grey;
+    border: 1px solid black;
     padding-top: 3em;
+    box-shadow: 0em 0em 1.5em .25em #000d;
     padding-bottom: 3.5em;
     margin-top: .5em;
     margin-bottom: 4em;
