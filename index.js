@@ -12,10 +12,10 @@ $(function () {
     var projectBtnAniDur = 250;
     var projectBtnEasing = "easeOutBack";
 
-    $(".project .btn#github a").mouseenter(function () {
+    $(".project .btn#c2a a").mouseenter(function () {
         $(this).stop().animate({ "padding": ".55em 6.5em"}, projectBtnAniDur, projectBtnEasing);
     });
-    $(".project .btn#github a").mouseleave(function () {
+    $(".project .btn#c2a a").mouseleave(function () {
         $(this).stop().animate({ "padding": ".55em 5em" }, projectBtnAniDur, projectBtnEasing);
     });
 
@@ -31,21 +31,6 @@ $(function () {
         {
             $(this).empty().html("Collapse");
             $expand_area.find(".gallery").trigger("resize");
-            // var w = $expand_area.width();
-            // console.log("w: " + w)
-            // $(this).parent().parent().find(".expand-area").css({"width":w,"height":"auto", "opacity": "0", "pointer-events": "none", "overflow" : "hidden", "position":"absolute", "padding": "2em 0 .5em 0" });
-            // console.log($expand_area.height());
-            // var h = parseFloat($expand_area.css("height")) + 2.5 * parseInt($expand_area.css("font-size")) + "px";
-            // console.log(h);
-            // $(this).parent().parent().find(".expand-area").css({"height": "0", "width":"100%", "position": "relative", "visibility": "visible", "pointer-events": "auto", "padding": "0" });
-            
-            // $(this).parent().parent().find(".expand-area").stop().animate({
-            //     "height": h, "paddingTop": "2em", "paddingRight": "0", "paddingBottom": "0.5em", "PaddingLeft": "0"
-            // }, dur, function () {
-            //     console.log($(this).height());
-            //     $(this).delay(10000).height('auto');
-            //     console.log($(this).height());
-            // });
         }
     });
 
