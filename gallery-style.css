@@ -44,9 +44,9 @@
     height: 100%;
     cursor: pointer;
     position: absolute;
-    opacity: .3;
+    opacity: .7;
     top: 0;
-    padding: 0 40px;
+    padding: 0 1.5em;
     user-select: none;
     z-index: 5;
 }
@@ -66,6 +66,8 @@
 
 .gallery #bar_island {
     position: absolute;
+    bottom: -1.5em;
+    height: 1.5em;
     width:100%;
     z-index:5;
 }
@@ -73,8 +75,8 @@
 .gallery #bar_island ul {
     display: inline-block;
     position:relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .gallery .bar {
@@ -98,3 +100,124 @@
         display: none;
     }
 }
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+/*//////////////////////// Unique (Per Gallery): ////////////////////////*/
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+.project .gallery {
+    /* width: 100%; */
+    box-shadow: 0px 1em .75em .2em #7777;
+    height: 20em;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+} 
+.project .gallery #carousel {
+    /* top:2em; */
+    /* position: relative; */
+    top:-2.5em;
+    position: absolute;
+}
+.project .gallery .slide {
+    margin-top: 2.5em;
+}
+.project .gallery .slide .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.project .gallery .slide .content.con {
+    background-position: 50% 50%;
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.project .gallery .slide .content.cov {
+    background-position: 50% 50%;
+    /* background-size: auto 100%; */
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+
+}
+
+.project .gallery .caption {
+    top:-2.5em;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px .75em .2em #7777;
+    height: 2.5em;
+    color:white;
+    line-height: 2.5em;
+    font-size: 1em;
+    background-color: #1a1c1e;
+    /* padding: .8em 1.5em .4em 1.5em; */
+    /* border-radius: .6em; */
+    /* text-shadow: 0px 0px 5px 5px #333a; */
+    /* box-shadow: 0px 0px 1em .05em #2227; */
+    /* border: 1px solid #222; */
+    /* border-bottom: none; */
+    text-transform: uppercase;
+    overflow: hidden;   
+    position: absolute;
+    z-index: 0;
+}
+
+.project .gallery .caption div {
+    font-weight: 300;
+    position: relative;
+    line-height: 1;
+    font-size: 1.2em;
+    display: inline-block;
+    width: auto;
+}
+.project .gallery .gallery-btn {
+    width: 3em;
+    opacity: .6;
+} .project .gallery .gallery-btn#right {
+    padding-right: 2.5em;
+} .project .gallery .gallery-btn#left {
+    padding-left: 2.5em;
+} .project .gallery .gallery-btn .icon_bg {
+    z-index: 0;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 100%;
+    width:1.8em; height: 1.8em;
+} .project .gallery .gallery-btn #icon {
+    width: 2em;
+    z-index:1;
+
+} .project .gallery #bar_island {
+    background-color: #1a1c1e;
+    position: absolute;
+}
+.project .gallery #bar_island .selected {
+    opacity: 1;
+} .project .gallery .bar {
+    opacity: .5;
+    float: left;
+    margin: 0px;
+    padding: .5em;
+    cursor: pointer;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+} .project .gallery .innerbar {
+    width: .4em;
+    height: .4em;
+    box-shadow: 0px 0px .3em .05em #2229;
+    border-radius: .5em;
+    background-color: whitesmoke;
+} 
+/* ///////////////////////////////////// */
+
