@@ -11,8 +11,8 @@ $(function () {
 
     var projectBtnAniDur = 250;
     var projectBtnEasing = "easeOutBack";
-    var COLLAPSE_BTN_HTML = "&nbsp;Collapse&nbsp;";
-
+    var COLLAPSE_BTN_HTML = "<p>&nbsp;Collapse&nbsp;</p>";
+    var EXPAND_BTN_HTML = "<p>&nbsp;Expand&nbsp;</p>";
 
 
     $(".project .btn#c2a a").mouseenter(function () {
@@ -24,17 +24,15 @@ $(function () {
         $(this).stop().animate({ "padding": ".55em 5em" }, projectBtnAniDur, projectBtnEasing);
     });
 
-
     $(".project .collapse-btn, .project .expand-btn").click(function () {
-
-        $expand_area = $(this).parent().parent().parent().find(".expand-area")
-
+        $expand_area = $(this).parent().parent().parent().find(".expand-area");
         $(this).toggleClass("collapse-btn").toggleClass("expand-btn");
-        if ($(this).html() == COLLAPSE_BTN_HTML)  // COLLAPSE 
-            $(this).empty().html("&nbsp;Expand&nbsp;");
+        if ($(this).html().replace(/\s/g, "") == COLLAPSE_BTN_HTML)  // COLLAPSE 
+            $(this).empty().html(EXPAND_BTN_HTML);
         else  // EXPAND 
         {
-            $(this).empty().html("&nbsp;Collapse&nbsp;");
+            $(this).empty().html(COLLAPSE_BTN_HTML);
+            // force custom gallery to resize now that it is no longer "collapsed"
             $expand_area.find(".gallery").trigger("resize");
         }
     });

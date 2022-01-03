@@ -277,6 +277,7 @@
     overflow: hidden;
     position: relative;
     padding-top: .5em;
+    font-size: 1.05em;
     /* padding: .2em 0em 0 1.5em; */
 }
 .project .summary h3 {
@@ -302,8 +303,8 @@
     width: 100%;
     height: auto;
     /* margin-left: 1.4em; */
-    line-height: 1.3;
-    margin: 0.15em 0;
+    line-height: 1.2;
+    margin: 0.2em 0;
 }
 
 .project .btn#c2a {

@@ -113,7 +113,8 @@
     box-shadow: 0px 1em .75em .2em #7777;
     height: 20em;
     margin-top: 2.5em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
+
 } 
 .project .gallery #carousel {
     /* top:2em; */
@@ -136,7 +137,6 @@
     background-color: transparent;
     background-repeat: no-repeat;
 }
-
 .project .gallery .slide .content.cov {
     background-position: 50% 50%;
     /* background-size: auto 100%; */
@@ -145,7 +145,6 @@
     background-repeat: no-repeat;
 
 }
-
 .project .gallery .caption {
     top:-2.5em;
     margin: 0;
@@ -169,7 +168,6 @@
     position: absolute;
     z-index: 0;
 }
-
 .project .gallery .caption div {
     font-weight: 300;
     position: relative;
@@ -180,30 +178,35 @@
 }
 .project .gallery .gallery-btn {
     width: 3em;
-    opacity: .6;
-} .project .gallery .gallery-btn#right {
+} 
+.project .gallery .gallery-btn#right {
     padding-right: 2.5em;
-} .project .gallery .gallery-btn#left {
+} 
+.project .gallery .gallery-btn#left {
     padding-left: 2.5em;
-} .project .gallery .gallery-btn .icon_bg {
+} 
+.project .gallery .gallery-btn .icon_bg {
     z-index: 0;
     position: absolute;
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 100%;
-    width:1.8em; height: 1.8em;
-} .project .gallery .gallery-btn #icon {
+    width:1.7em; height: 1.7em;
+} 
+.project .gallery .gallery-btn #icon {
     width: 2em;
     z-index:1;
 
-} .project .gallery #bar_island {
+} 
+.project .gallery #bar_island {
     background-color: #1a1c1e;
     position: absolute;
 }
 .project .gallery #bar_island .selected {
     opacity: 1;
-} .project .gallery .bar {
+} 
+.project .gallery .bar {
     opacity: .5;
     float: left;
     margin: 0px;
@@ -212,7 +215,8 @@
     overflow: hidden;
     width: auto;
     height: auto;
-} .project .gallery .innerbar {
+} 
+.project .gallery .innerbar {
     width: .4em;
     height: .4em;
     box-shadow: 0px 0px .3em .05em #2229;
