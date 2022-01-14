@@ -225,6 +225,10 @@
     position: absolute;
  '   transform: translateX(50%); */
 }
+
+.project .expand-btn p , .project .collapse-btn p {
+    font-weight: 400;
+}
 .project .collapse-btn {
     padding: 0 6.5em;
     /* margin: 0 2em; */

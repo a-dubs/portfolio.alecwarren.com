@@ -25,37 +25,40 @@ $(function () {
     });
 
     $(".project .collapse-btn, .project .expand-btn").click(function () {
-        $expand_area = $(this).parent().parent().parent().find(".expand-area");
-        $(this).toggleClass("collapse-btn").toggleClass("expand-btn");
-        if ($(this).html().replace(/\s/g, "") == COLLAPSE_BTN_HTML)  // COLLAPSE 
-            $(this).empty().html(EXPAND_BTN_HTML);
-        else  // EXPAND 
-        {
-            $(this).empty().html(COLLAPSE_BTN_HTML);
-            // force custom gallery to resize now that it is no longer "collapsed"
-            $expand_area.find(".gallery").trigger("resize");
+        if (!$(this).is(':animated')) {
+            $(this).toggleClass("collapse-btn").toggleClass("expand-btn");
+            if ($(this).html().replace(/\s/g, "") == COLLAPSE_BTN_HTML)  // COLLAPSE 
+                $(this).empty().html(EXPAND_BTN_HTML);
+            else  // EXPAND 
+            {
+                $(this).empty().html(COLLAPSE_BTN_HTML);
+                // force custom gallery to resize now that it is no longer "collapsed"
+                
+            }
         }
+        $expand_area = $(this).parent().parent().parent().find(".expand-area");
+        $expand_area.find(".gallery").trigger("resize");
     });
 
-    $(".taskbar .filter").click(function () {
-        $(this).toggleClass("selected").toggleClass("unselected");
-        var selected = []
-        $(".taskbar .filter").each(function () {
-            if ($(this).hasClass("selected"))
-                selected.push($(this).attr('id'));
-        });
+    // $(".taskbar .filter").click(function () {
+    //     $(this).toggleClass("selected").toggleClass("unselected");
+    //     var selected = []
+    //     $(".taskbar .filter").each(function () {
+    //         if ($(this).hasClass("selected"))
+    //             selected.push($(this).attr('id'));
+    //     });
 
-        if (selected.length == 0) {
-            $(".project").show()
-        }
+    //     if (selected.length == 0) {
+    //         $(".project").show()
+    //     }
 
-        else {
-            selected.forEach(function (id) {
-                $(".projec#" + id).show(300);
-            })
-        }
+    //     else {
+    //         selected.forEach(function (id) {
+    //             $(".projec#" + id).show(300);
+    //         })
+    //     }
 
-    })
+    // })
 
     $(".project .collapse-btn, .project .expand-btn").mouseenter(function () {
         if ($(this).html() == COLLAPSE_BTN_HTML) { // COLLAPSE 
