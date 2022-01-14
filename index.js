@@ -37,7 +37,6 @@ $(function () {
         }
     });
 
-
     $(".taskbar .filter").click(function () {
         $(this).toggleClass("selected").toggleClass("unselected");
         var selected = []
@@ -84,8 +83,19 @@ $(function () {
         $(this).parent().delay(600).addClass("col-22 col-sm-22 col-md-22 col-lg-22 col-xl-22 col-xxl-22"); 
         $(this).parent().delay(650).trigger("resize");
         $(this).delay(1000).removeClass("visible").addClass("invisible");
-     }); */
+        }); */
 
+    $(".expand-area .secondary-collapse-btn .txt-box").mouseenter(function () {
+        $(this).find(".bg").stop().animate({
+            "width": "100%"
+        }, projectBtnAniDur, projectBtnEasing);
+    });
+    $(".expand-area .secondary-collapse-btn .txt-box").mouseleave(function () {
+        $(this).find(".bg").stop().animate({
+            "width": "0%"
+        }, projectBtnAniDur, projectBtnEasing);
+    });
+    
 });
 
 $(document).scroll(function () {

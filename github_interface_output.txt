@@ -1,0 +1,182 @@
+<div class="container project" id="modded-keyboard">
+    <div class="metadata row justify-content-center g-0">
+        <div class="data dates col-24 col-md">
+            Dates: Dec '20 - Jan '21
+        </div>
+        <div class="data archived col-24 col-md">
+            Status: Archived
+        </div>
+        <div class="data completed col-24 col-md">
+            Progress: Completed
+        </div>
+    </div>
+    <div class="collapse-area">
+        <div class="row justify-content-between g-0">
+            <div class="header-container col-22 offset-1">
+                <h3 class="title">
+                    Fully Upgrading My $40 RGB Mechanical Keyboard
+                    <h4 class="description">
+                        Breathed new life into my ol' reliable mechanical keyboard with all new switches, keycaps, and sound-dampening foam.
+                    </h4>
+                </h3>
+            </div>
+        </div>
+        <div class="button-container row justify-content-center">
+            <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-modded-keyboard" data-bs-toggle="collapse">
+                Expand
+            </div>
+        </div>
+    </div>
+    <div class="collapser collapse" id="collapser-modded-keyboard">
+        <div class="expand-area row g-0 justify-content-center">
+            <script src="projects/modded-keyboard/modded-keyboard-gallery-script.js">
+            </script>
+            <div class="gallery col-24 col-sm-20 col-md-18 col-lg-11" id="modded_keyboard_gallery">
+                <ul id="carousel">
+                    <li class="slide">
+                        <h3 class="caption h-center-a">
+                            <div>
+                                New Switches Installed
+                            </div>
+                        </h3>
+                        <div class="content cov" style="background-image: url('projects/modded-keyboard/image_gallery/switches_closeup.JPG');">
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <h3 class="caption h-center-a">
+                            <div>
+                                New Keycaps Installed
+                            </div>
+                        </h3>
+                        <div class="content cov" style="background-image: url('projects/modded-keyboard/image_gallery/new_kb.JPG');">
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <h3 class="caption h-center-a">
+                            <div>
+                                Side-View of New Switches
+                            </div>
+                        </h3>
+                        <div class="content cov" style="background-image: url('projects/modded-keyboard/image_gallery/switches_closeup2.JPG');">
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <h3 class="caption h-center-a">
+                            <div>
+                                The Keyboard's PCB
+                            </div>
+                        </h3>
+                        <div class="content cov" style="background-image: url('projects/modded-keyboard/image_gallery/pcb.JPG');">
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <h3 class="caption h-center-a">
+                            <div>
+                                Original (Ugly!) Keycaps
+                            </div>
+                        </h3>
+                        <div class="content cov" style="background-image: url('projects/modded-keyboard/image_gallery/old_kb.JPG');">
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <h3 class="caption h-center-a">
+                            <div>
+                                Original Switches
+                            </div>
+                        </h3>
+                        <div class="content cov" style="background-image: url('projects/modded-keyboard/image_gallery/old_switches.JPG');">
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <h3 class="caption h-center-a">
+                            <div>
+                                Close-Up of New Switches
+                            </div>
+                        </h3>
+                        <div class="content cov" style="background-image: url('projects/modded-keyboard/image_gallery/switches_closeup3.JPG');">
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <h3 class="caption h-center-a">
+                            <div>
+                                Side-View of New Keycaps
+                            </div>
+                        </h3>
+                        <div class="content cov" style="background-image: url('projects/modded-keyboard/image_gallery/new_kb2.JPG');">
+                        </div>
+                    </li>
+                </ul>
+                <div class="gallery-btn notselected" id="left">
+                    <img class="vert_spacer" id="icon" src="l-cheveron.png"/>
+                    <div class="icon_bg">
+                    </div>
+                </div>
+                <div class="gallery-btn notselected" id="right">
+                    <img class="vert_spacer" id="icon" src="r-chevron.png"/>
+                    <div class="icon_bg">
+                    </div>
+                </div>
+                <div class="island" id="bar_island">
+                    <ul id="bar_island_ul">
+                    </ul>
+                </div>
+            </div>
+            <div class="summary col-22 col-sm-19 col-md-17 col-lg-11">
+                <h3>
+                    Summary
+                </h3>
+                <ul>
+                    <li>
+                        Replaced the old and crappy Outemu Red linear switches with Gateron Clear linear switches
+                        <ul>
+                            <li>
+                                Removed all the old switches, then desoldered all ~150 hot-swap sockets which were too small for the new switches, and then soldered in all the new Gateron Clear linear switches.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Replaced old keycaps with OEM profile blank fog-white keycaps. Stayed with OEM profile so they keys would be the same shape as the old ones.
+                        <ul>
+                            <li>
+                                Transfered all of the o-rings from the old keycaps to the new blank fog-white transluscent keycaps to make the new switches even quieter
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Fully cleaned the plate and case, added sound dampening foam to inside the keyboard, and added dampening tape to the loose and wobbly stabalizers to reduce noise.
+                    </li>
+                    <li>
+                        Had to do 6 pcb trace and throughhole repairs due to damage sustained from desoldering and resoldering since to the pcb is super cheap and this was one of my first proper soldering experiences.
+                    </li>
+                    <li>
+                        Took roughly 25 hours and 300 solders. Worth it! Looks and feels infinitely better.
+                    </li>
+                    <li>
+                        Keycaps used:
+                        <a href="https://kbdfans.com/products/pbt-oem-fog-white-keycaps?variant=34166308995211">
+                            PBT OEM Fog White Keycaps
+                        </a>
+                    </li>
+                    <li>
+                        Switches used:
+                        <a href="https://www.amazon.com/Switches-Underglow-Compatible-Mechanical-Transparent/dp/B07K8464CR/ref=sr_1_2?dchild=1&amp;keywords=gateron%2Bclear&amp;qid=1614068952&amp;sr=8-2&amp;th=1">
+                            Gateron Clear Linear Switch Plate Mount 35g Actuation Force
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn btn-dark" id="c2a">
+                <a href="http://github.com/a-dubs/modded-keyboard" target="_blank">
+                    See Full Project on GitHub
+                </a>
+            </div>
+            <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-modded-keyboard" data-bs-toggle="collapse">
+                <div class="txt-box">
+                    Collapse
+                    <div class="bg h-center-a">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

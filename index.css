@@ -149,7 +149,7 @@
     overflow: hidden;
     position: relative;
     background-color: whitesmoke;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     box-shadow: 0em 0em 1.5em .25em #000d;
     /* padding-top: 3em; */
     /* padding-top: 4.5em; */
@@ -164,7 +164,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    padding: 2em 0 .5em 0;
+    padding: 0.5em 0;
     /* height: 0; */
     /* overflow: hidden; */
 
@@ -213,15 +213,17 @@
     
 }
 .project .expand-btn, .project .collapse-btn  {
-    height: 3.2em;
-    font-size: .8em;
+    height: 3em;
+    font-size: .9em;
     overflow: hidden;
     bottom: 0;
-    line-height: 3.2em;
+    line-height: 3em;
     width: auto;
+    box-shadow: 0 0 0.25em 0em #5555;
+
     /* right: 50%;
     position: absolute;
-    transform: translateX(50%); */
+ '   transform: translateX(50%); */
 }
 .project .collapse-btn {
     padding: 0 6.5em;
@@ -251,14 +253,56 @@
 
 .project .metadata .data {
     /* border-radius: .4em; */
-    line-height: 2em;
-    height: 2em;
+    line-height: 2;
+    height: auto;
+    font-size: 1.1em;
     text-align: center;
+    text-shadow: 0px 0px 0.2em #2229;
+    font-weight: 400;
+    /* text-transform: uppercase; */
 }
-.project .metadata .data:hover {
+/* .project .metadata .data:hover {
     background-color: white;
     box-shadow: 0px 0px .75 .1em #ccc9;
+} */
+
+
+.project .metadata .dates {
+    color:white;
+    background-color: #6c757d ;
 }
+.project .metadata .status-active {
+    color:white;
+    background-color:rgb(255, 20, 31);
+}
+.project .metadata .status-inactive {
+    color:white;
+    background-color: #ffc107;
+}
+.project .metadata .status-archived {
+    color:white;
+    /* background-color:#198754; */
+    background-color: #19bf8d;
+}
+.project .metadata .progress-concept {
+    color:white;
+    background-color:rgb(245, 139, 222);
+}
+.project .metadata .progress-in-progress {
+    color:white;
+    background-color:rgb(174, 99, 235);
+}
+.project .metadata .progress-functional {
+    color:white;
+    /* background-color:#198754 ; */
+    background-color: rgb(0, 180, 240);
+}
+.project .metadata .progress-complete {
+    color:white;
+    background-color:#0d6efd ;
+}
+
+
 .project .metadata_hint {
     height: 1em;
     
@@ -277,28 +321,28 @@
     overflow: hidden;
     position: relative;
     padding-top: .5em;
-    font-size: 1.05em;
-    /* padding: .2em 0em 0 1.5em; */
+    font-size: .9em;
+    padding-bottom: .75em;
 }
 .project .summary h3 {
     text-align: left;
     line-height: 1;
     font-weight: 900;
-    font-size: 1.3em;
+    font-size: 1.4em;
     /* text-decoration: underline; */
 }
 .project .summary ul {
     float:left;
     width: 100%;
     /* font-size: .9em; */
-    font-size: .95em;
+    font-size: .975em;
     list-style-type:circle; 
     height: auto;
     /* margin: 0.05em 0 0.15em 0; */
     padding-left: 1.5em;
 }
 .project .summary li {
-    font-size: .9em;
+    font-size: 1em;
     float:left;
     width: 100%;
     height: auto;
@@ -318,8 +362,52 @@
 .project .btn#c2a a {    
     padding: .55em 5em;
     display: block;
+    box-shadow: 0 0 0.5em 0em #3335;
     margin: 0;
 }
+
+
+
+.expand-area .secondary-collapse-btn
+{
+    background-color: transparent;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+.expand-area .secondary-collapse-btn .txt-box
+{
+    line-height: 1.5em;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    padding: 0 0.1em 1px 0.1em;
+}
+
+.expand-area .secondary-collapse-btn .txt-box .bg
+{
+    display: inline-block;
+    position: absolute;
+    background-color: transparent;
+    opacity: 1;
+    /* left:0; top: 0; */
+    width: 0;
+    height:100%;
+    text-align: center;
+    content: '';
+    padding-bottom: 1px;
+    /* display: none; */
+    border-bottom: 1px solid black;
+}
+
+/* .expand-area .secondary-collapse-btn .txt-box:hover {
+    padding-bottom: 0px; 
+    border-bottom: 1px solid black; 
+} */
 
 
 /*
@@ -371,10 +459,24 @@
 /* ////////////////////////////////////// MEDIUM SCREENS  /////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 1499px) {
-    #landing .bar {
-        width:92%;
-    }
     
+    #landing {
+        padding: 3em 5% 2em 5%;
+    }
+    #landing h1 {
+        font-size: 5.5em;
+        letter-spacing: .025em;
+    }
+    #landing .bar {
+        width: 92%;
+        margin: .5em auto .5em auto;
+
+    }
+    #landing h2 {
+        font-size: 1.3em;
+        line-height: 1.3;
+        letter-spacing: .25em;
+    }
     .project .summary {
         margin-left: -1.5em;
         padding-left: 0em;
@@ -384,6 +486,30 @@
     } 
 }
 
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////// SMALL SCREENS  /////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+@media all and (max-width: 1099px) {
+    #landing {
+        padding: 3em 5% 2em 5%;
+    }
+    #landing h1 {
+        font-size: 4.4em;
+        letter-spacing: .03em;
+    }
+    #landing .bar {
+        width: 97%;
+        margin: .5em auto .5em auto;
+
+    }
+    #landing h2 {
+        font-size: 1.2em;
+        line-height: 1.3;
+        letter-spacing: .2em;
+    }
+
+
+}
 
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -415,11 +541,12 @@
         /* width: 100%; */
         margin-right: 0em;
     }
+    
     #landing {
-        padding: 3em 5% 2em 5%;
+        padding: 3em 0% 2em 0%;
     }
     #landing h1 {
-        font-size: 2.2em;
+        font-size: 2.5em;
         letter-spacing: .025em;
     }
     #landing .bar {
@@ -430,9 +557,8 @@
     #landing h2 {
         font-size: 1.3em;
         line-height: 1.3;
-        letter-spacing: .25em;
+        letter-spacing: .2em;
     }
-    
     
 }
 
