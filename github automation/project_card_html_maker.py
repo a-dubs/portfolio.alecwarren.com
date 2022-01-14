@@ -189,12 +189,12 @@ def make_project_metadata(project_info):
     status_labels = ["Active", "Inactive", "Archived"]
     progress_class_names = ["concept", "in-progress", "functional", "complete"]
     progress_labels = ["Concept", "In-Progress", "Functional", "Complete"]
-    status_given = project_info["metadata"]["project status"].lower().replace(" ","-")
-    progress_given = project_info["metadata"]["project progress"].lower().replace(" ","-")
+    status_given = project_info["metadata"]["project status"].strip().lower().replace(" ","-")
+    progress_given = project_info["metadata"]["project progress"].strip().lower().replace(" ","-")
     status_class = difflib.get_close_matches(status_given, status_class_names)[0]
-    status_label = difflib.get_close_matches(status_given, status_labels)[0]
+    status_label = status_labels[status_class_names.index(status_class)]
     progress_class = difflib.get_close_matches(progress_given, progress_class_names)[0]
-    progress_label = difflib.get_close_matches(progress_given, progress_labels)[0]
+    progress_label = progress_labels[progress_class_names.index(progress_class)]
     return (
     '    <div class="metadata row justify-content-center g-0">\n' + \
     '        <div class="data dates col-24 col-md">\n' + \
