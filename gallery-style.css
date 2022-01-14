@@ -172,7 +172,8 @@
     font-weight: 300;
     position: relative;
     line-height: 1;
-    font-size: 1.2em;
+    height: auto;
+    font-size: 1em;
     display: inline-block;
     width: auto;
 }
