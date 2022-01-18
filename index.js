@@ -13,8 +13,9 @@ $(function () {
     var projectBtnEasing = "easeOutBack";
     var COLLAPSE_BTN_HTML = "<p>&nbsp;Collapse&nbsp;</p>";
     var EXPAND_BTN_HTML = "<p>&nbsp;Expand&nbsp;</p>";
-
-
+    const all_expand_and_collapse_btns = (".project .collapse-btn, .project .expand-btn, " +
+        ".project .secondary-collapse-btn , .project .secondary-expand-btn")
+    
     $(".project .btn#c2a a").mouseenter(function () {
         // if (!$(this).is(':animated')) {
         $(this).stop().animate({ "padding": ".55em 6.5em" }, projectBtnAniDur, projectBtnEasing);
@@ -25,37 +26,61 @@ $(function () {
     });
 
     $(".project .collapse-btn, .project .expand-btn").click(function () {
-        $expand_area = $(this).parent().parent().parent().find(".expand-area");
-        $(this).toggleClass("collapse-btn").toggleClass("expand-btn");
-        if ($(this).html().replace(/\s/g, "") == COLLAPSE_BTN_HTML)  // COLLAPSE 
-            $(this).empty().html(EXPAND_BTN_HTML);
-        else  // EXPAND 
-        {
-            $(this).empty().html(COLLAPSE_BTN_HTML);
-            // force custom gallery to resize now that it is no longer "collapsed"
-            $expand_area.find(".gallery").trigger("resize");
+        $expand_area = $(this).parent().parent().parent().find(".expand-area"); 
+
+        if (!$expand_area.is(':animated')) {
+            $(this).toggleClass("collapse-btn").toggleClass("expand-btn");
+            if ($(this).hasClass("collapse-btn")) { // in now collapse button 
+                // force custom gallery to resize now that it is no longer "collapsed"
+                $expand_area.find(".gallery").trigger("resize");
+                $(this).empty().html(COLLAPSE_BTN_HTML);  // so change text to collapse
+                $expand_area.stop().animate({ "opacity": "1" }, 350, "easeInOutQuad");
+            }
+            else {  // is now expand button  
+                $(this).empty().html(EXPAND_BTN_HTML);  // so change text to expand
+                $expand_area.stop().animate({ "opacity": "0" }, 350, "easeOutCubic");
+                
+                
+            }
         }
+
+        // TODO: make slideshow reset to first slide when expanded/hidden so it starts at the beginning every time
+        
+        
     });
 
-    $(".taskbar .filter").click(function () {
-        $(this).toggleClass("selected").toggleClass("unselected");
-        var selected = []
-        $(".taskbar .filter").each(function () {
-            if ($(this).hasClass("selected"))
-                selected.push($(this).attr('id'));
-        });
 
-        if (selected.length == 0) {
-            $(".project").show()
+    $(".project .secondary-collapse-btn .txt-box").click(function () {
+        $expand_area = $(this).parent().parent();
+
+        if (!$expand_area.is(':animated')) {
+            $expand_area.parent().parent().find(".collapse-btn").toggleClass("collapse-btn").toggleClass("expand-btn");
+            $expand_area.parent().parent().find(".expand-btn").empty().html(EXPAND_BTN_HTML);
+            $expand_area.parent().parent().find(".expand-btn").stop().animate({ "padding": "0 4em" }, projectBtnAniDur, projectBtnEasing);
+            $expand_area.stop().animate({ "opacity": "0" }, 350, "easeOutCubic");
+          
         }
+        
+    });
+    // $(".taskbar .filter").click(function () {
+    //     $(this).toggleClass("selected").toggleClass("unselected");
+    //     var selected = []
+    //     $(".taskbar .filter").each(function () {
+    //         if ($(this).hasClass("selected"))
+    //             selected.push($(this).attr('id'));
+    //     });
 
-        else {
-            selected.forEach(function (id) {
-                $(".projec#" + id).show(300);
-            })
-        }
+    //     if (selected.length == 0) {
+    //         $(".project").show()
+    //     }
 
-    })
+    //     else {
+    //         selected.forEach(function (id) {
+    //             $(".projec#" + id).show(300);
+    //         })
+    //     }
+
+    // })
 
     $(".project .collapse-btn, .project .expand-btn").mouseenter(function () {
         if ($(this).html() == COLLAPSE_BTN_HTML) { // COLLAPSE 

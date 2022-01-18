@@ -110,8 +110,8 @@
 /* //////////////////////////////////////////////////////////////////////////////////////////////// */
 .project .gallery {
     /* width: 100%; */
-    box-shadow: 0px 1em .75em .2em #7777;
-    height: 20em;
+    box-shadow: 0px 1.5em .75em .05em #5557;
+    height: 22em;
     margin-top: 2.5em;
     margin-bottom: 3em;
 
@@ -151,7 +151,7 @@
     display: inline-block;
     width: 100%;
     text-align: center;
-    box-shadow: 0px 0px .75em .2em #7777;
+    box-shadow: 0px 1em .75em .2em #7777;
     height: 2.5em;
     color:white;
     line-height: 2.5em;
