@@ -129,6 +129,172 @@
 
 
         
+        <div class="container project" id="autonomous-intersection">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: Oct '17 - May '19
+                </div>
+                <div class="data status-archived col-24 col-md">
+                    Status: Archived
+                </div>
+                <div class="data progress-complete col-24 col-md">
+                    Progress: Complete
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            autonomous-intersection
+                            <h4 class="description">
+                                Developing and Simulating Self-Driving Car A.I. Without Need for Traffic Lights
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-autonomous-intersection" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-autonomous-intersection">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/autonomous-intersection/autonomous-intersection-gallery-script.js">
+                    </script>
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-11" id="autonomous_intersection_gallery">
+                        <ul id="carousel">
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        The Autonomous Intersection in Action!
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/autonomous-intersection/image_gallery/4_lane_demo.gif');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        Threading the Needle
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/autonomous-intersection/image_gallery/4_lane_1.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        High-Level Flowchart of the Cars' AI
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/autonomous-intersection/image_gallery/flowchart.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        Simulation with 1 Lane
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/autonomous-intersection/image_gallery/1_lane_1.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        Simulation with 2 Lanes
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/autonomous-intersection/image_gallery/2_lane_1.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        Simulation with 3 Lanes
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/autonomous-intersection/image_gallery/3_lane_1.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        Simulation with 4 Lanes
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/autonomous-intersection/image_gallery/4_lane_2.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        Demo of Simulation with 1 Lane
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/autonomous-intersection/image_gallery/1_lane_demo.gif');">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="gallery-btn notselected" id="left">
+                            <img class="vert_spacer" id="icon" src="l-cheveron.png"/>
+                            <div class="icon_bg">
+                            </div>
+                        </div>
+                        <div class="gallery-btn notselected" id="right">
+                            <img class="vert_spacer" id="icon" src="r-chevron.png"/>
+                            <div class="icon_bg">
+                            </div>
+                        </div>
+                        <div class="island" id="bar_island">
+                            <ul id="bar_island_ul">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="summary col-22 col-sm-19 col-md-17 col-lg-11">
+                        <h3>
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                The purpose of this project was to create a computer simulation of a four-way intersection with no traffic controls (stop signs or traffic lights) and then develop an autonomous artificial intellegence such that the self-driving cars regulate their speed and pass through the intersection without any collisions.
+                            </li>
+                            <li>
+                                This 2D simulation was created entirely from scratch in Visual Studio 2017 using C#, and leveraged the MonoGame framework, an improvement to Microsoft's discontinued XNA 4.0 framework.
+                            </li>
+                            <li>
+                                The physics and mathematical details of the simulation were created from scratch specifically for this simulation, with acceleration and deceleration physics derived from data on real world tests of the Tesla Model S.
+                            </li>
+                            <li>
+                                The simulation is incredibly flexible and gives the operator extremely granular control over all characteristics of the simulation. This is thanks to the Vars.cs file which contains nearly 50 public global constants that both the simulation and the AI have access to. This means that the even the thickness and length of the dashed lines on the road can be modified. By drawing the simuation dynamically based on these constants, a myriad of different scenarious can be simulated.
+                            </li>
+                            <li>
+                                What separates this AI from any other existing solutions out there, is that is fully decentralized and autonomous. There is no central server controllin all the vehicles. Rather, each vehicle makes its own decisions using basic ulitarian values such that the efficiency and safety of the intersection as a whole is the number one priority. By making the AI decentralized, there is no risk of having every car on the road crash when there is a failure with the central server.
+                            </li>
+                            <li>
+                                This was accomplished by leveraging what is known as "swarm intelligence" - all the cars intercommunicate such that they knew exactly what all the other car's current states are and can accurately predict where collisions would occur and then decide how to avoid them.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/autonomous-intersection" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-autonomous-intersection" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="container project" id="de_freight">
             <div class="metadata row justify-content-center g-0">
                 <div class="data dates col-24 col-md">
@@ -607,6 +773,150 @@
                         </a>
                     </div>
                     <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-ohgkb" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container project" id="smart-deadbolt">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: Oct '21 - Present
+                </div>
+                <div class="data status-active col-24 col-md">
+                    Status: Active
+                </div>
+                <div class="data progress-in-progress col-24 col-md">
+                    Progress: In-Progress
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            Smart IoT Deadbolt Controller
+                            <h4 class="description">
+                                Smart deadbolt controller leveraging MySensors for connectivity running on an Arduino pro micro which manipulates a TT motor to turn a standard deadbolt.
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-smart-deadbolt" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-smart-deadbolt">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/smart-deadbolt/smart-deadbolt-gallery-script.js">
+                    </script>
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-11" id="smart_deadbolt_gallery">
+                        <ul id="carousel">
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        Assembly of 3D Printed Components
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/full_assembly_1.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        Assembly of 3D Printed Components
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/full_assembly_2.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        View w/ Clear Sides
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/full_assembly_clear_sides_1.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        Exploded View
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/full_assembly_expanded_1.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        Exploded View w/ Clear Sides &amp; Bottom
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/full_assembly_expanded_2.jpg');">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="gallery-btn notselected" id="left">
+                            <img class="vert_spacer" id="icon" src="l-cheveron.png"/>
+                            <div class="icon_bg">
+                            </div>
+                        </div>
+                        <div class="gallery-btn notselected" id="right">
+                            <img class="vert_spacer" id="icon" src="r-chevron.png"/>
+                            <div class="icon_bg">
+                            </div>
+                        </div>
+                        <div class="island" id="bar_island">
+                            <ul id="bar_island_ul">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="summary col-22 col-sm-19 col-md-17 col-lg-11">
+                        <h3>
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                Fully custom enclosure and mounting bracket designed by yours truly in Autodesk Inventer and 3D printed in-house
+                            </li>
+                            <li>
+                                Tooless, modular design allowed for rapid prototyping and iterative design
+                            </li>
+                            <li>
+                                Custom designed 3D printed components: Enclosure, door mounting system, motor mount, gear adapter for deadbolt thumb latch, and gear driven by motor with hole for potentiometer
+                            </li>
+                            <li>
+                                Specially designed to not require any modification to existing deadbolt or door (since this is being installed in an apartment)
+                            </li>
+                            <li>
+                                Will be controlled by my Home Assistant smart home ecosystem using secure authentication via my
+                                <a href="https://github.com/a-dubs/secure-smart-apt-entry-panel">
+                                    Secure Smart Apartment Entry Panel
+                                </a>
+                                <ul>
+                                    <li>
+                                        Leverages NRF24 radio modules to connect to my MySensors network which is controlled by my Home Assistant smart home ecosystem
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/smart-deadbolt" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-deadbolt" data-bs-toggle="collapse">
                         <div class="txt-box">
                             Collapse
                             <div class="bg h-center-a">
