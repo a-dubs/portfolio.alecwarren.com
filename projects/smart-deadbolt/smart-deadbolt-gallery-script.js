@@ -5,7 +5,8 @@ function smart_deadbolt_gallery() {
     var animationduration =600;
     // Comment the line below out if you do not want the automatic slide changing 
     var currentslide = 1;
-    var smart_deadbolt_gallery_timer = setInterval(goToSlide, 4000);
+    var smart_deadbolt_gallery_hidden = $("#smart_deadbolt_gallery").is(":visible");
+    var smart_deadbolt_gallery_timer = setInterval(goToSlide, 5000);
     // edit the number above to change how often (in milliseconds) the slides change
     var tempbar = document.createElement("li");
     tempbar.className = "bar";
@@ -29,30 +30,47 @@ function smart_deadbolt_gallery() {
 
     // jump to specified slide number (including clones)
     function goToSlide(slideNumber = currentslide + 1) {
-     if(slideNumber>numofslides){
-			  slideNumber = 1;
-		  }
-        if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
-            clearInterval(smart_deadbolt_gallery_timer);
-            smart_deadbolt_gallery_timer = setInterval(goToSlide, 5000);
-            oldslide = currentslide;
-            currentslide = slideNumber;
-            jQuery(slides[oldslide - 1]).css("z-index", 3);
-            jQuery(slides[currentslide - 1]).css("z-index", 2);
-
-            jQuery(slides[currentslide - 1]).css("width", slidewidth);
-            jQuery(slides[currentslide - 1]).css({
-                "opacity": 1
-            });
-            jQuery(slides[oldslide - 1]).animate({
-                "opacity": 0
-            }, animationduration, "easeOutCubic");
-
-            setTimeout(function() {
-                jQuery(slides[oldslide - 1]).css("width", 0);
-            }, animationduration, "easeOutCubic")
-            updateBars(currentslide)
+        if ($("#smart_deadbolt_gallery").is(":visible")) {
+            
+            if (smart_deadbolt_gallery_hidden)
+            {
+                clearInterval(smart_deadbolt_gallery_timer);
+                smart_deadbolt_gallery_timer = setInterval(goToSlide, 5000);
+                smart_deadbolt_gallery_hidden = false;
+            }    
+            else {
+                if (slideNumber > numofslides) {
+                    slideNumber = 1;
+                }
+                if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
+                    clearInterval(smart_deadbolt_gallery_timer);
+                    smart_deadbolt_gallery_timer = setInterval(goToSlide, 5000);
+                    oldslide = currentslide;
+                    currentslide = slideNumber;
+                    jQuery(slides[oldslide - 1]).css("z-index", 3);
+                    jQuery(slides[currentslide - 1]).css("z-index", 2);
+    
+                    jQuery(slides[currentslide - 1]).css("width", slidewidth);
+                    jQuery(slides[currentslide - 1]).css({
+                        "opacity": 1
+                    });
+                    jQuery(slides[oldslide - 1]).animate({
+                        "opacity": 0
+                    }, animationduration, "easeOutCubic");
+    
+                    setTimeout(function () {
+                        jQuery(slides[oldslide - 1]).css("width", 0);
+                    }, animationduration, "easeOutCubic")
+                    updateBars(currentslide)
+                }
+            }
         }
+        else {
+            smart_deadbolt_gallery_hidden = true;
+            clearInterval(smart_deadbolt_gallery_timer);
+            smart_deadbolt_gallery_timer = setInterval(goToSlide, 100);
+        }
+
     }
 
     var oldslide = 1;
@@ -72,7 +90,8 @@ function smart_deadbolt_gallery() {
     })
 
     // click button to advance to the left
-    $("#smart_deadbolt_gallery .gallery-btn#left").click(function() {
+    $("#smart_deadbolt_gallery .gallery-btn#left").click(function () {
+        smart_deadbolt_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (currentslide == 1) {
                 goToSlide(numofslides)
@@ -83,7 +102,8 @@ function smart_deadbolt_gallery() {
     });
 
     // click button to advance to the right
-    $("#smart_deadbolt_gallery .gallery-btn#right").click(function() {
+    $("#smart_deadbolt_gallery .gallery-btn#right").click(function () {
+        smart_deadbolt_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (currentslide == numofslides) {
                 goToSlide(1)
@@ -145,7 +165,8 @@ function smart_deadbolt_gallery() {
 
 
     // change highlighted bar & move slideshow
-    $("#smart_deadbolt_gallery .bar").click(function() {
+    $("#smart_deadbolt_gallery .bar").click(function () {
+        smart_deadbolt_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (!$(this).hasClass("selected")) {
                 $(this).toggleClass("selected")

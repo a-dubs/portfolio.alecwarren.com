@@ -121,6 +121,8 @@ $(function () {
         }, projectBtnAniDur, projectBtnEasing);
     });
     
+    getMetadata();
+
 });
 
 $(document).scroll(function () {
@@ -128,3 +130,21 @@ $(document).scroll(function () {
 });
 
 
+function getMetadata() {
+    metadata = {}
+
+    metadata_divs = document.getElementsByClassName("metadata")
+    for (i = 0; i < Array(metadata_divs).length; i++)
+    {
+        data = metadata_divs[i].getElementsByClassName("data")
+        
+        // metadata[document.getElementsByClassName("project")[i].id]["dates"] = data[0].text
+        // metadata[i+""]["dates"] = data[0].text
+        // metadata[i+""]["status"] = data[1].text
+        // metadata[i+""]["progress"] = data[2].text
+        console.log(data[0].textContent.split(":")[1].trim())
+        console.log(data[1].textContent.split(":")[1].trim())
+        console.log(data[2].textContent.split(":")[1].trim())
+    }
+    console.log(metadata)   
+}

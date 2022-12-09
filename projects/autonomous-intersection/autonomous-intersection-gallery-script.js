@@ -5,7 +5,8 @@ function autonomous_intersection_gallery() {
     var animationduration =600;
     // Comment the line below out if you do not want the automatic slide changing 
     var currentslide = 1;
-    var autonomous_intersection_gallery_timer = setInterval(goToSlide, 4000);
+    var autonomous_intersection_gallery_hidden = $("#autonomous_intersection_gallery").is(":visible");
+    var autonomous_intersection_gallery_timer = setInterval(goToSlide, 5000);
     // edit the number above to change how often (in milliseconds) the slides change
     var tempbar = document.createElement("li");
     tempbar.className = "bar";
@@ -29,30 +30,47 @@ function autonomous_intersection_gallery() {
 
     // jump to specified slide number (including clones)
     function goToSlide(slideNumber = currentslide + 1) {
-     if(slideNumber>numofslides){
-			  slideNumber = 1;
-		  }
-        if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
-            clearInterval(autonomous_intersection_gallery_timer);
-            autonomous_intersection_gallery_timer = setInterval(goToSlide, 5000);
-            oldslide = currentslide;
-            currentslide = slideNumber;
-            jQuery(slides[oldslide - 1]).css("z-index", 3);
-            jQuery(slides[currentslide - 1]).css("z-index", 2);
-
-            jQuery(slides[currentslide - 1]).css("width", slidewidth);
-            jQuery(slides[currentslide - 1]).css({
-                "opacity": 1
-            });
-            jQuery(slides[oldslide - 1]).animate({
-                "opacity": 0
-            }, animationduration, "easeOutCubic");
-
-            setTimeout(function() {
-                jQuery(slides[oldslide - 1]).css("width", 0);
-            }, animationduration, "easeOutCubic")
-            updateBars(currentslide)
+        if ($("#autonomous_intersection_gallery").is(":visible")) {
+            
+            if (autonomous_intersection_gallery_hidden)
+            {
+                clearInterval(autonomous_intersection_gallery_timer);
+                autonomous_intersection_gallery_timer = setInterval(goToSlide, 5000);
+                autonomous_intersection_gallery_hidden = false;
+            }    
+            else {
+                if (slideNumber > numofslides) {
+                    slideNumber = 1;
+                }
+                if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
+                    clearInterval(autonomous_intersection_gallery_timer);
+                    autonomous_intersection_gallery_timer = setInterval(goToSlide, 5000);
+                    oldslide = currentslide;
+                    currentslide = slideNumber;
+                    jQuery(slides[oldslide - 1]).css("z-index", 3);
+                    jQuery(slides[currentslide - 1]).css("z-index", 2);
+    
+                    jQuery(slides[currentslide - 1]).css("width", slidewidth);
+                    jQuery(slides[currentslide - 1]).css({
+                        "opacity": 1
+                    });
+                    jQuery(slides[oldslide - 1]).animate({
+                        "opacity": 0
+                    }, animationduration, "easeOutCubic");
+    
+                    setTimeout(function () {
+                        jQuery(slides[oldslide - 1]).css("width", 0);
+                    }, animationduration, "easeOutCubic")
+                    updateBars(currentslide)
+                }
+            }
         }
+        else {
+            autonomous_intersection_gallery_hidden = true;
+            clearInterval(autonomous_intersection_gallery_timer);
+            autonomous_intersection_gallery_timer = setInterval(goToSlide, 100);
+        }
+
     }
 
     var oldslide = 1;
@@ -72,7 +90,8 @@ function autonomous_intersection_gallery() {
     })
 
     // click button to advance to the left
-    $("#autonomous_intersection_gallery .gallery-btn#left").click(function() {
+    $("#autonomous_intersection_gallery .gallery-btn#left").click(function () {
+        autonomous_intersection_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (currentslide == 1) {
                 goToSlide(numofslides)
@@ -83,7 +102,8 @@ function autonomous_intersection_gallery() {
     });
 
     // click button to advance to the right
-    $("#autonomous_intersection_gallery .gallery-btn#right").click(function() {
+    $("#autonomous_intersection_gallery .gallery-btn#right").click(function () {
+        autonomous_intersection_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (currentslide == numofslides) {
                 goToSlide(1)
@@ -145,7 +165,8 @@ function autonomous_intersection_gallery() {
 
 
     // change highlighted bar & move slideshow
-    $("#autonomous_intersection_gallery .bar").click(function() {
+    $("#autonomous_intersection_gallery .bar").click(function () {
+        autonomous_intersection_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (!$(this).hasClass("selected")) {
                 $(this).toggleClass("selected")

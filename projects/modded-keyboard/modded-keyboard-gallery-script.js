@@ -5,7 +5,8 @@ function modded_keyboard_gallery() {
     var animationduration =600;
     // Comment the line below out if you do not want the automatic slide changing 
     var currentslide = 1;
-    var modded_keyboard_gallery_timer = setInterval(goToSlide, 4000);
+    var modded_keyboard_gallery_hidden = $("#modded_keyboard_gallery").is(":visible");
+    var modded_keyboard_gallery_timer = setInterval(goToSlide, 5000);
     // edit the number above to change how often (in milliseconds) the slides change
     var tempbar = document.createElement("li");
     tempbar.className = "bar";
@@ -29,30 +30,47 @@ function modded_keyboard_gallery() {
 
     // jump to specified slide number (including clones)
     function goToSlide(slideNumber = currentslide + 1) {
-     if(slideNumber>numofslides){
-			  slideNumber = 1;
-		  }
-        if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
-            clearInterval(modded_keyboard_gallery_timer);
-            modded_keyboard_gallery_timer = setInterval(goToSlide, 5000);
-            oldslide = currentslide;
-            currentslide = slideNumber;
-            jQuery(slides[oldslide - 1]).css("z-index", 3);
-            jQuery(slides[currentslide - 1]).css("z-index", 2);
-
-            jQuery(slides[currentslide - 1]).css("width", slidewidth);
-            jQuery(slides[currentslide - 1]).css({
-                "opacity": 1
-            });
-            jQuery(slides[oldslide - 1]).animate({
-                "opacity": 0
-            }, animationduration, "easeOutCubic");
-
-            setTimeout(function() {
-                jQuery(slides[oldslide - 1]).css("width", 0);
-            }, animationduration, "easeOutCubic")
-            updateBars(currentslide)
+        if ($("#modded_keyboard_gallery").is(":visible")) {
+            
+            if (modded_keyboard_gallery_hidden)
+            {
+                clearInterval(modded_keyboard_gallery_timer);
+                modded_keyboard_gallery_timer = setInterval(goToSlide, 5000);
+                modded_keyboard_gallery_hidden = false;
+            }    
+            else {
+                if (slideNumber > numofslides) {
+                    slideNumber = 1;
+                }
+                if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
+                    clearInterval(modded_keyboard_gallery_timer);
+                    modded_keyboard_gallery_timer = setInterval(goToSlide, 5000);
+                    oldslide = currentslide;
+                    currentslide = slideNumber;
+                    jQuery(slides[oldslide - 1]).css("z-index", 3);
+                    jQuery(slides[currentslide - 1]).css("z-index", 2);
+    
+                    jQuery(slides[currentslide - 1]).css("width", slidewidth);
+                    jQuery(slides[currentslide - 1]).css({
+                        "opacity": 1
+                    });
+                    jQuery(slides[oldslide - 1]).animate({
+                        "opacity": 0
+                    }, animationduration, "easeOutCubic");
+    
+                    setTimeout(function () {
+                        jQuery(slides[oldslide - 1]).css("width", 0);
+                    }, animationduration, "easeOutCubic")
+                    updateBars(currentslide)
+                }
+            }
         }
+        else {
+            modded_keyboard_gallery_hidden = true;
+            clearInterval(modded_keyboard_gallery_timer);
+            modded_keyboard_gallery_timer = setInterval(goToSlide, 100);
+        }
+
     }
 
     var oldslide = 1;
@@ -72,7 +90,8 @@ function modded_keyboard_gallery() {
     })
 
     // click button to advance to the left
-    $("#modded_keyboard_gallery .gallery-btn#left").click(function() {
+    $("#modded_keyboard_gallery .gallery-btn#left").click(function () {
+        modded_keyboard_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (currentslide == 1) {
                 goToSlide(numofslides)
@@ -83,7 +102,8 @@ function modded_keyboard_gallery() {
     });
 
     // click button to advance to the right
-    $("#modded_keyboard_gallery .gallery-btn#right").click(function() {
+    $("#modded_keyboard_gallery .gallery-btn#right").click(function () {
+        modded_keyboard_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (currentslide == numofslides) {
                 goToSlide(1)
@@ -145,7 +165,8 @@ function modded_keyboard_gallery() {
 
 
     // change highlighted bar & move slideshow
-    $("#modded_keyboard_gallery .bar").click(function() {
+    $("#modded_keyboard_gallery .bar").click(function () {
+        modded_keyboard_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (!$(this).hasClass("selected")) {
                 $(this).toggleClass("selected")
