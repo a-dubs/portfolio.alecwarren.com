@@ -136,10 +136,10 @@
         <div class="container project" id="autonomous-intersection">
             <div class="metadata row justify-content-center g-0">
                 <div class="data dates col-24 col-md">
-                    Dates: Oct '17 - Present
+                    Dates: Oct '17 - May '19
                 </div>
-                <div class="data status-active col-24 col-md">
-                    Status: Active
+                <div class="data status-archived col-24 col-md">
+                    Status: Archived
                 </div>
                 <div class="data progress-complete col-24 col-md">
                     Progress: Complete
@@ -632,6 +632,306 @@
                         </a>
                     </div>
                     <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-alarm-clock-mat" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container project" id="smart-backdoor-auth-panel">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: Nov '21 - Present
+                </div>
+                <div class="data status-active col-24 col-md">
+                    Status: Active
+                </div>
+                <div class="data progress-in-progress col-24 col-md">
+                    Progress: In-Progress
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            Smart Backdoor Auth Panel
+                            <h4 class="description">
+                                3D-Printed access panel that will provide authentication for my custom smart deadbolt using either RFID, fingerprints, or a keypad
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-smart-backdoor-auth-panel" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-smart-backdoor-auth-panel">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/smart-backdoor-auth-panel/smart-backdoor-auth-panel-gallery-script.js">
+                    </script>
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-17" id="smart_backdoor_auth_panel_gallery">
+                        <ul id="carousel">
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        3D Model of Auth Panel w/ Cover Open
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_open.png');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        3D Model of Auth Panel w/ Clear Cover
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_clear_cover.png');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        3D Model of the Waterproofing Seals/O-Rings
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_waterproofing.png');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        3D Model of Auth Panel w/ Cover Closed
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_closed.png');">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="gallery-btn notselected" id="left">
+                            <img class="vert_spacer" id="icon" src="l-cheveron.png"/>
+                            <div class="icon_bg">
+                            </div>
+                        </div>
+                        <div class="gallery-btn notselected" id="right">
+                            <img class="vert_spacer" id="icon" src="r-chevron.png"/>
+                            <div class="icon_bg">
+                            </div>
+                        </div>
+                        <div class="island" id="bar_island">
+                            <ul id="bar_island_ul">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
+                        <h3>
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                Leverages NRF24 radio modules to connect to my MySensors network which is controlled by my Home Assistant smart home ecosystem
+                            </li>
+                            <li>
+                                Features several methods of authentication that allow for various levels of convenience and security, but regardless of which methods are used, two must be used for any given authentication attempt, creating a 2FA system to significantly enhance security.
+                            </li>
+                            <li>
+                                At certain hours of the day, such as 2am to 6am, can enhance security requirements by disabling some less secure authentication methods
+                            </li>
+                            <li>
+                                Authentication methods will include:
+                                <ul>
+                                    <li>
+                                        10+ digit pin entered via physical keypad
+                                    </li>
+                                    <li>
+                                        rfid key
+                                    </li>
+                                    <li>
+                                        fingerprint scanner
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/smart-backdoor-auth-panel" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-backdoor-auth-panel" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container project" id="spotify-api-projects">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: Oct '19 - Present
+                </div>
+                <div class="data status-active col-24 col-md">
+                    Status: Active
+                </div>
+                <div class="data progress-functional col-24 col-md">
+                    Progress: Functional
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            Custom Spotify API Interface &amp; Projects
+                            <h4 class="description">
+                                A monorepo for the custom interface I made for the Spotify web api and the various projects and scripts that leverage it
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-spotify-api-projects" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-spotify-api-projects">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/spotify-api-projects/spotify-api-projects-gallery-script.js">
+                    </script>
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
+                        <h3 style="text-align:center">
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                Created custom interface for the spotify API that provides a simplified, easy to use library for leveraging various functionality of the spotify API.
+                                <ul>
+                                    <li>
+                                        Various python libraries and packages already exist for the spotify API, but after using them for a few months, I knew I wanted to make my own
+                                    </li>
+                                    <li>
+                                        Reasons for making my own DIY spotify library:
+                                        <ul>
+                                            <li>
+                                                The existing libraries felt too bloated
+                                            </li>
+                                            <li>
+                                                Designing and implementing a custom interface from scratch would allow for me to shape it and customize it to fit my needs and use cases
+                                            </li>
+                                            <li>
+                                                I wanted to have my own way of handling authentication for the Spotify web API
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        The "Spotify Jukebox" project is a working concept of a web-app that will act as simplified Spotify app, centered around sharing a common queue of music, the "jukebox", if you will, so that 2 or more users can act as DJ
+                                        <ul>
+                                            <li>
+                                                A proof of concept of the jukebox queue has been implemented in the form of a simple CLI
+                                            </li>
+                                            <li>
+                                                The next step will be to build an API to handle the basic functions of the juxebox and then build a web-app as a front end that leverages this API
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/spotify-api-projects" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-spotify-api-projects" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container project" id="smart-bedroom-leds">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: Feb '22 - Present
+                </div>
+                <div class="data status-active col-24 col-md">
+                    Status: Active
+                </div>
+                <div class="data progress-functional col-24 col-md">
+                    Progress: Functional
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            Bedroom Smart Home Arduino Controller
+                            <h4 class="description">
+                                Arduino that connects to my smart home via RF as controller for LED strips, speakers, and more
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-smart-bedroom-leds" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-smart-bedroom-leds">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/smart-bedroom-leds/smart-bedroom-leds-gallery-script.js">
+                    </script>
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
+                        <h3 style="text-align:center">
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                Integrates perfectly with my
+                                <a href="https://github.com/a-dubs/smart-home">
+                                    Smart Home Ecosystem
+                                </a>
+                                via RF module using the MySensors protocol, allowing for easy control from my phone or any browser.
+                            </li>
+                            <li>
+                                Manipulates 3 zones of LED strips, allowing for individual control of RGB color, brightness, and on/off per zone
+                            </li>
+                            <li>
+                                Controls an 20 year old Sony soundbar &amp; subwoofer combo by sending IR codes via an IR blaster, allowing for control of volume and input selection without need for a remote.
+                            </li>
+                            <li>
+                                Detects motion in room and reports this information for use with presence detection and other automations.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/smart-bedroom-leds" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-bedroom-leds" data-bs-toggle="collapse">
                         <div class="txt-box">
                             Collapse
                             <div class="bg h-center-a">
@@ -1195,306 +1495,6 @@
                         </a>
                     </div>
                     <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-ohgkb" data-bs-toggle="collapse">
-                        <div class="txt-box">
-                            Collapse
-                            <div class="bg h-center-a">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container project" id="smart-backdoor-auth-panel">
-            <div class="metadata row justify-content-center g-0">
-                <div class="data dates col-24 col-md">
-                    Dates: Nov '21 - Present
-                </div>
-                <div class="data status-active col-24 col-md">
-                    Status: Active
-                </div>
-                <div class="data progress-in-progress col-24 col-md">
-                    Progress: In-Progress
-                </div>
-            </div>
-            <div class="collapse-area">
-                <div class="row justify-content-between g-0">
-                    <div class="header-container col-22 offset-1">
-                        <h3 class="title">
-                            Smart Backdoor Auth Panel
-                            <h4 class="description">
-                                3D-Printed access panel that will provide authentication for my custom smart deadbolt using either RFID, fingerprints, or a keypad
-                            </h4>
-                        </h3>
-                    </div>
-                </div>
-                <div class="button-container row justify-content-center">
-                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-smart-backdoor-auth-panel" data-bs-toggle="collapse">
-                        <p>
-                            Expand
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="collapser collapse" id="collapser-smart-backdoor-auth-panel">
-                <div class="expand-area row g-0 justify-content-center align-items-center">
-                    <script src="projects/smart-backdoor-auth-panel/smart-backdoor-auth-panel-gallery-script.js">
-                    </script>
-                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-17" id="smart_backdoor_auth_panel_gallery">
-                        <ul id="carousel">
-                            <li class="slide">
-                                <h3 class="caption h-center-a">
-                                    <div>
-                                        3D Model of Auth Panel w/ Cover Open
-                                    </div>
-                                </h3>
-                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_open.png');">
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <h3 class="caption h-center-a">
-                                    <div>
-                                        3D Model of Auth Panel w/ Clear Cover
-                                    </div>
-                                </h3>
-                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_clear_cover.png');">
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <h3 class="caption h-center-a">
-                                    <div>
-                                        3D Model of the Waterproofing Seals/O-Rings
-                                    </div>
-                                </h3>
-                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_waterproofing.png');">
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <h3 class="caption h-center-a">
-                                    <div>
-                                        3D Model of Auth Panel w/ Cover Closed
-                                    </div>
-                                </h3>
-                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_closed.png');">
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="gallery-btn notselected" id="left">
-                            <img class="vert_spacer" id="icon" src="l-cheveron.png"/>
-                            <div class="icon_bg">
-                            </div>
-                        </div>
-                        <div class="gallery-btn notselected" id="right">
-                            <img class="vert_spacer" id="icon" src="r-chevron.png"/>
-                            <div class="icon_bg">
-                            </div>
-                        </div>
-                        <div class="island" id="bar_island">
-                            <ul id="bar_island_ul">
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
-                        <h3>
-                            Summary
-                        </h3>
-                        <ul>
-                            <li>
-                                Leverages NRF24 radio modules to connect to my MySensors network which is controlled by my Home Assistant smart home ecosystem
-                            </li>
-                            <li>
-                                Features several methods of authentication that allow for various levels of convenience and security, but regardless of which methods are used, two must be used for any given authentication attempt, creating a 2FA system to significantly enhance security.
-                            </li>
-                            <li>
-                                At certain hours of the day, such as 2am to 6am, can enhance security requirements by disabling some less secure authentication methods
-                            </li>
-                            <li>
-                                Authentication methods will include:
-                                <ul>
-                                    <li>
-                                        10+ digit pin entered via physical keypad
-                                    </li>
-                                    <li>
-                                        rfid key
-                                    </li>
-                                    <li>
-                                        fingerprint scanner
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn btn-dark" id="c2a">
-                        <a href="http://github.com/a-dubs/smart-backdoor-auth-panel" target="_blank">
-                            See Full Project on GitHub
-                        </a>
-                    </div>
-                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-backdoor-auth-panel" data-bs-toggle="collapse">
-                        <div class="txt-box">
-                            Collapse
-                            <div class="bg h-center-a">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container project" id="smart-bedroom-leds">
-            <div class="metadata row justify-content-center g-0">
-                <div class="data dates col-24 col-md">
-                    Dates: Jan '22 - Present
-                </div>
-                <div class="data status-active col-24 col-md">
-                    Status: Active
-                </div>
-                <div class="data progress-functional col-24 col-md">
-                    Progress: Functional
-                </div>
-            </div>
-            <div class="collapse-area">
-                <div class="row justify-content-between g-0">
-                    <div class="header-container col-22 offset-1">
-                        <h3 class="title">
-                            Bedroom Smart Home Arduino Controller
-                            <h4 class="description">
-                                Arduino that connects to my smart home via RF as controller for LED strips, speakers, and more
-                            </h4>
-                        </h3>
-                    </div>
-                </div>
-                <div class="button-container row justify-content-center">
-                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-smart-bedroom-leds" data-bs-toggle="collapse">
-                        <p>
-                            Expand
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="collapser collapse" id="collapser-smart-bedroom-leds">
-                <div class="expand-area row g-0 justify-content-center align-items-center">
-                    <script src="projects/smart-bedroom-leds/smart-bedroom-leds-gallery-script.js">
-                    </script>
-                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
-                        <h3 style="text-align:center">
-                            Summary
-                        </h3>
-                        <ul>
-                            <li>
-                                Integrates perfectly with my
-                                <a href="https://github.com/a-dubs/smart-home">
-                                    Smart Home Ecosystem
-                                </a>
-                                via RF module using the MySensors protocol, allowing for easy control from my phone or any browser.
-                            </li>
-                            <li>
-                                Manipulates 3 zones of LED strips, allowing for individual control of RGB color, brightness, and on/off per zone
-                            </li>
-                            <li>
-                                Controls an 20 year old Sony soundbar &amp; subwoofer combo by sending IR codes via an IR blaster, allowing for control of volume and input selection without need for a remote.
-                            </li>
-                            <li>
-                                Detects motion in room and reports this information for use with presence detection and other automations.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn btn-dark" id="c2a">
-                        <a href="http://github.com/a-dubs/smart-bedroom-leds" target="_blank">
-                            See Full Project on GitHub
-                        </a>
-                    </div>
-                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-bedroom-leds" data-bs-toggle="collapse">
-                        <div class="txt-box">
-                            Collapse
-                            <div class="bg h-center-a">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container project" id="spotify-api-projects">
-            <div class="metadata row justify-content-center g-0">
-                <div class="data dates col-24 col-md">
-                    Dates: Oct '19 - Present
-                </div>
-                <div class="data status-active col-24 col-md">
-                    Status: Active
-                </div>
-                <div class="data progress-functional col-24 col-md">
-                    Progress: Functional
-                </div>
-            </div>
-            <div class="collapse-area">
-                <div class="row justify-content-between g-0">
-                    <div class="header-container col-22 offset-1">
-                        <h3 class="title">
-                            Custom Spotify API Interface &amp; Projects
-                            <h4 class="description">
-                                A monorepo for the custom interface I made for the Spotify web api and the various projects and scripts that leverage it
-                            </h4>
-                        </h3>
-                    </div>
-                </div>
-                <div class="button-container row justify-content-center">
-                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-spotify-api-projects" data-bs-toggle="collapse">
-                        <p>
-                            Expand
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="collapser collapse" id="collapser-spotify-api-projects">
-                <div class="expand-area row g-0 justify-content-center align-items-center">
-                    <script src="projects/spotify-api-projects/spotify-api-projects-gallery-script.js">
-                    </script>
-                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
-                        <h3 style="text-align:center">
-                            Summary
-                        </h3>
-                        <ul>
-                            <li>
-                                Created custom interface for the spotify API that provides a simplified, easy to use library for leveraging various functionality of the spotify API.
-                                <ul>
-                                    <li>
-                                        Various python libraries and packages already exist for the spotify API, but after using them for a few months, I knew I wanted to make my own
-                                    </li>
-                                    <li>
-                                        Reasons for making my own DIY spotify library:
-                                        <ul>
-                                            <li>
-                                                The existing libraries felt too bloated
-                                            </li>
-                                            <li>
-                                                Designing and implementing a custom interface from scratch would allow for me to shape it and customize it to fit my needs and use cases
-                                            </li>
-                                            <li>
-                                                I wanted to have my own way of handling authentication for the Spotify web API
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        The "Spotify Jukebox" project is a working concept of a web-app that will act as simplified Spotify app, centered around sharing a common queue of music, the "jukebox", if you will, so that 2 or more users can act as DJ
-                                        <ul>
-                                            <li>
-                                                A proof of concept of the jukebox queue has been implemented in the form of a simple CLI
-                                            </li>
-                                            <li>
-                                                The next step will be to build an API to handle the basic functions of the juxebox and then build a web-app as a front end that leverages this API
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn btn-dark" id="c2a">
-                        <a href="http://github.com/a-dubs/spotify-api-projects" target="_blank">
-                            See Full Project on GitHub
-                        </a>
-                    </div>
-                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-spotify-api-projects" data-bs-toggle="collapse">
                         <div class="txt-box">
                             Collapse
                             <div class="bg h-center-a">
