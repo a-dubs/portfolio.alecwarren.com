@@ -20,6 +20,23 @@
     text-transform: uppercase;
 }
 
+#footer {  
+    padding: 5em 0 9em 0;
+    text-align: center;
+    color: whitesmoke;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#footer h3 {
+    font-size: 1.5em;
+    line-height: 2;
+    font-weight: 100;
+    width: auto;
+    letter-spacing: .25em;
+    position: relative;
+}
+
 #landing h1 {
     font-size: 6.5em;
     line-height: 1;
@@ -144,7 +161,7 @@
 
 .project {
     padding: 0;
-    border-radius: 3em;
+    border-radius: 2em;
     position: relative;
     overflow: hidden;
     position: relative;
@@ -320,15 +337,17 @@
 
 
 .project .summary {
-    padding-left: 1.5em;
+    /* padding-left: 1.5em; */
     overflow: hidden;
     position: relative;
     padding-top: .5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     font-size: .9em;
     padding-bottom: .75em;
 }
 .project .summary h3 {
-    text-align: left;
+    text-align: center;
     line-height: 1;
     font-weight: 900;
     font-size: 1.4em;
@@ -340,6 +359,7 @@
     /* font-size: .9em; */
     font-size: .975em;
     list-style-type:circle; 
+    /* list-style: none; */
     height: auto;
     /* margin: 0.05em 0 0.15em 0; */
     padding-left: 1.5em;
@@ -456,13 +476,18 @@
     #landing .bar {
         width:77%;
     }
+    .project .gallery {
+        height: 30em !important;
+    }
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////// MEDIUM SCREENS  /////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 1499px) {
-    
+    .project .gallery {
+        height: 22em !important;
+    }
     #landing {
         padding: 3em 5% 2em 5%;
     }
@@ -481,7 +506,7 @@
         letter-spacing: .25em;
     }
     .project .summary {
-        margin-left: -1.5em;
+        /* margin-left: -1.5em; */
         padding-left: 0em;
     }
     .project .summary h3 {

@@ -56,9 +56,16 @@
             <h1> My Portfolio</h1>
             <div class="bar"></div>
             <h2>Past, Current, and Future Projects </h2>
+            <!-- <br><br>
+            <p>
+                This website was designed and created from scratch by yours truly using HTML, CSS, Javascript,
+                Bootstrap, and jQuery. The content of this website was automatically generated from my GitHub by a
+                Python script I wrote which allows for this site to be effortlessly maintained and updated, all from
+                my GitHub. 
+            </p> -->
         </div>
 
-
+        
 
         <!-- <div class="taskbar container">
                 <h3>Filter by category</h3>
@@ -120,9 +127,6 @@
 
 
 
-
-
-
         <!-- -------------------------------------------------- -->
         <!-- ------- AUTO GENERATED PROJECT CARDS BELOW ------- -->
         <!-- -------------------------------------------------- -->
@@ -132,10 +136,10 @@
         <div class="container project" id="autonomous-intersection">
             <div class="metadata row justify-content-center g-0">
                 <div class="data dates col-24 col-md">
-                    Dates: Oct '17 - May '19
+                    Dates: Oct '17 - Present
                 </div>
-                <div class="data status-archived col-24 col-md">
-                    Status: Archived
+                <div class="data status-active col-24 col-md">
+                    Status: Active
                 </div>
                 <div class="data progress-complete col-24 col-md">
                     Progress: Complete
@@ -145,7 +149,7 @@
                 <div class="row justify-content-between g-0">
                     <div class="header-container col-22 offset-1">
                         <h3 class="title">
-                            autonomous-intersection
+                            Autonomous Intersection Simulation &amp; A.I.
                             <h4 class="description">
                                 Developing and Simulating Self-Driving Car A.I. Without Need for Traffic Lights
                             </h4>
@@ -164,7 +168,7 @@
                 <div class="expand-area row g-0 justify-content-center align-items-center">
                     <script src="projects/autonomous-intersection/autonomous-intersection-gallery-script.js">
                     </script>
-                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-11" id="autonomous_intersection_gallery">
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-17" id="autonomous_intersection_gallery">
                         <ul id="carousel">
                             <li class="slide">
                                 <h3 class="caption h-center-a">
@@ -254,13 +258,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="summary col-22 col-sm-19 col-md-17 col-lg-11">
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
                         <h3>
                             Summary
                         </h3>
                         <ul>
                             <li>
-                                The purpose of this project was to create a computer simulation of a four-way intersection with no traffic controls (stop signs or traffic lights) and then develop an autonomous artificial intellegence such that the self-driving cars regulate their speed and pass through the intersection without any collisions.
+                                The purpose of this project was to create a computer simulation of a four-way intersection with no traffic controls (stop signs or traffic lights) and then develop an autonomous artificial intelligence such that the self-driving cars regulate their speed and pass through the intersection without any collisions.
                             </li>
                             <li>
                                 This 2D simulation was created entirely from scratch in Visual Studio 2017 using C#, and leveraged the MonoGame framework, an improvement to Microsoft's discontinued XNA 4.0 framework.
@@ -269,13 +273,15 @@
                                 The physics and mathematical details of the simulation were created from scratch specifically for this simulation, with acceleration and deceleration physics derived from data on real world tests of the Tesla Model S.
                             </li>
                             <li>
-                                The simulation is incredibly flexible and gives the operator extremely granular control over all characteristics of the simulation. This is thanks to the Vars.cs file which contains nearly 50 public global constants that both the simulation and the AI have access to. This means that the even the thickness and length of the dashed lines on the road can be modified. By drawing the simuation dynamically based on these constants, a myriad of different scenarious can be simulated.
+                                The simulation is incredibly flexible and gives the operator extremely granular control over all characteristics of the simulation. This is thanks to the Vars.cs file which contains nearly 50 public global constants that both the simulation and the AI have access to. This means that the even the thickness and length of the dashed lines on the road can be modified. By drawing the simulation dynamically based on these constants, a myriad of different scenarios can be simulated.
                             </li>
                             <li>
-                                What separates this AI from any other existing solutions out there, is that is fully decentralized and autonomous. There is no central server controllin all the vehicles. Rather, each vehicle makes its own decisions using basic ulitarian values such that the efficiency and safety of the intersection as a whole is the number one priority. By making the AI decentralized, there is no risk of having every car on the road crash when there is a failure with the central server.
+                                What separates this AI from any other existing solutions out there, is that is fully decentralized and autonomous. There is no central server controlling all the vehicles. Rather, each vehicle makes its own decisions using basic utilitarian  values such that the efficiency and safety of the intersection as a whole is the number one priority. By making the AI decentralized, there is no risk of having every car on the road crash when there is a failure with the central server.
                             </li>
                             <li>
                                 This was accomplished by leveraging what is known as "swarm intelligence" - all the cars intercommunicate such that they knew exactly what all the other car's current states are and can accurately predict where collisions would occur and then decide how to avoid them.
+                                <br/>
+                                <br/>
                             </li>
                         </ul>
                     </div>
@@ -285,6 +291,422 @@
                         </a>
                     </div>
                     <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-autonomous-intersection" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container project" id="smart-deadbolt">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: Oct '21 - Present
+                </div>
+                <div class="data status-active col-24 col-md">
+                    Status: Active
+                </div>
+                <div class="data progress-functional col-24 col-md">
+                    Progress: Functional
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            Custom Smart Deadbolt
+                            <h4 class="description">
+                                Brainstormed, designed, built, and programmed a smart deadbolt from scratch
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-smart-deadbolt" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-smart-deadbolt">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/smart-deadbolt/smart-deadbolt-gallery-script.js">
+                    </script>
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-17" id="smart_deadbolt_gallery">
+                        <ul id="carousel">
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        The Smart Deadbolt w/ Clear Window On
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/v4/smart_deadbolt_picture.jpg');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        The Smart Deadbolt in Action!
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/v4/deadbolt_in_action_compressed.gif');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        3D Model of Full Assembly (V4) - Clear Walls
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/v4/angle_view_clear_walls.png');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        3D Model of Full Assembly (V4) - Opaque Walls
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/v4/angle_view_with_walls.png');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        3D Model of Full Assembly (V4) - Front View
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/v4/front_view.png');">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        OLDER VERSION (V3) - Exploded View of 3D Models
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/v3/full_assembly_expanded_1.jpg');">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="gallery-btn notselected" id="left">
+                            <img class="vert_spacer" id="icon" src="l-cheveron.png"/>
+                            <div class="icon_bg">
+                            </div>
+                        </div>
+                        <div class="gallery-btn notselected" id="right">
+                            <img class="vert_spacer" id="icon" src="r-chevron.png"/>
+                            <div class="icon_bg">
+                            </div>
+                        </div>
+                        <div class="island" id="bar_island">
+                            <ul id="bar_island_ul">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
+                        <h3>
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                Attaches to my backdoor’s OEM deadbolt and turns the deadbolt lever to lock and unlock door
+                                <ul>
+                                    <li>
+                                        Mounts to the door and deadbolt without any adhesive or mounting hardware that could potentially damage the door
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Leverages radio modules for communication with smart home controller
+                            </li>
+                            <li>
+                                Powered by an Arduino Pro Mini 5v that drives a high torque TT motor
+                            </li>
+                            <li>
+                                Comprised of 13 different 3D-printed parts
+                                <ul>
+                                    <li>
+                                        Designed from scratch in Autodesk Inventor and 3D printed by yours truly
+                                    </li>
+                                    <li>
+                                        Custom modular design allows for rapid prototyping and iterative design
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                The deadbolt lever has a 3D-printed adapter that snaps around it (no adhesive necesssary) to convert it into one big gear
+                                <ul>
+                                    <li>
+                                        This gear is then turned by the TT motor through a smaller gear with half the teeth which
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Limit switch senses when door is closed or open - useful for functionality such as preventing deadbolt from being extended when trying to shut door
+                            </li>
+                            <li>
+                                Potentiometer sitting opposite the motor shaft provides two-fold functionality:
+                                <ul>
+                                    <li>
+                                        Acts as an axle of sorts for the gear driven by the TT motor
+                                    </li>
+                                    <li>
+                                        Is a highly precise, non-volatile, axle "encoder" that allows for knowing the position of the deadbolt gear, and can thus infer when the deadbolt is turned into the unlocked or locked position
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Seamlessly integrates with my custom smart home ecosystem
+                            </li>
+                            <li>
+                                Functionality provided by Smart Home:
+                                <ul>
+                                    <li>
+                                        Automatically locks deadbolt after a minute if it is left unlocked
+                                    </li>
+                                    <li>
+                                        Remote monitoring of whether door is ajar/open
+                                    </li>
+                                    <li>
+                                        Remote monitoring and control of the deadbolt from anywhere, enabling the ability to let guests into home remotely
+                                    </li>
+                                    <li>
+                                        Function that prevents deadbolt from locking for any reason - useful for when you want to step outside quickly without needing your keys or a smarthpone
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Currently on its
+                                <strong>
+                                    4th
+                                </strong>
+                                major version (V4)
+                                <ul>
+                                    <li>
+                                        V1 was the proof of concept
+                                    </li>
+                                    <li>
+                                        V2 was a more complete prototype, with only small improvements over V2, mostly just improved modularity
+                                    </li>
+                                    <li>
+                                        V3 saw the complete overhaul of the design into a proper enclosure with better modularity and better complexity
+                                    </li>
+                                    <li>
+                                        V4 took V3's complete design and cleaned up the aesthetics considerably, while adding fully realized modularity allowing for the addition of more attachments and sensors
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/smart-deadbolt" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-deadbolt" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container project" id="smart-alarm-clock-mat">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: Dec '21 - March '22
+                </div>
+                <div class="data status-active col-24 col-md">
+                    Status: Active
+                </div>
+                <div class="data progress-complete col-24 col-md">
+                    Progress: Complete
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            Smart Mat Alarm Clock
+                            <h4 class="description">
+                                Alarm clock on smartphone that is turned off only by standing on a pressure sensitive mat for 10 minutes
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-smart-alarm-clock-mat" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-smart-alarm-clock-mat">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/smart-alarm-clock-mat/smart-alarm-clock-mat-gallery-script.js">
+                    </script>
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
+                        <h3 style="text-align:center">
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                This project had 3 different pieces
+                                <ul>
+                                    <li>
+                                        The smart mat
+                                        <br/>
+                                        <ul>
+                                            <li>
+                                                Pressure sensitive mat that acts as button of sorts - when stepped on, its resistance drops to nearly zero and allows current to flow through.
+                                            </li>
+                                            <li>
+                                                Raspberry Pi Zero W that runs a python script which sends HTTP requests to the API hosted on my server
+                                                <ul>
+                                                    <li>
+                                                        Sends periodic "heartbeat" POST request every 30 seconds
+                                                    </li>
+                                                    <li>
+                                                        Sends POST request whenever the state of that mat changes
+                                                    </li>
+                                                    <li>
+                                                        Has ghosting/accidental step off prevention - mat's state must change for &gt;5 seconds before POST request gets send to API
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        The alarm clock software and automation on my phone
+                                        <br/>
+                                        <ul>
+                                            <li>
+                                                "Wake me up!" Android app provides the alarms that are monitored and triggered by "Tasker"
+                                            </li>
+                                            <li>
+                                                "Tasker" Android app monitors and triggers alarms provided "Wake me up!"
+                                            </li>
+                                            <li>
+                                                The Tasker app is where all of the logic lives:
+                                                <ul>
+                                                    <li>
+                                                        Request current state of the mat (stood on / not stood on) every minute
+                                                    </li>
+                                                    <li>
+                                                        If mat is not being stood on, retrigger the alarm and reset the minutes stood on counter
+                                                    </li>
+                                                    <li>
+                                                        If 10 consecutive iterations (each 1 minute long) occur where the mat is stood on, then disable the alarm
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        The public API hosted on my server
+                                        <ul>
+                                            <li>
+                                                Node.Js with Express
+                                            </li>
+                                            <li>
+                                                Receives the mat's current state and filters out false positives
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/smart-alarm-clock-mat" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-alarm-clock-mat" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container project" id="3d-modelling">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: May '20 - Present
+                </div>
+                <div class="data status-active col-24 col-md">
+                    Status: Active
+                </div>
+                <div class="data progress-concept col-24 col-md">
+                    Progress: Concept
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            3D Modelling Sandbox / Showcase
+                            <h4 class="description">
+                                A collection of various 3D models I created over time and want to show to world
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-3d-modelling" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-3d-modelling">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/3d-modelling/3d-modelling-gallery-script.js">
+                    </script>
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
+                        <h3 style="text-align:center">
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                These are all creations that I either made out of boredom or for some personal project that just was not important enough to have its own spot on my GitHub - so they live here now
+                            </li>
+                            <li>
+                                Models that can be found in this collection include:
+                                <ul>
+                                    <li>
+                                        Skar VXF12 Subwoofer
+                                    </li>
+                                    <li>
+                                        Plan for dorm room layout
+                                    </li>
+                                    <li>
+                                        2 dream monitor layout concepts
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/3d-modelling" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-3d-modelling" data-bs-toggle="collapse">
                         <div class="txt-box">
                             Collapse
                             <div class="bg h-center-a">
@@ -330,7 +752,7 @@
                 <div class="expand-area row g-0 justify-content-center align-items-center">
                     <script src="projects/de_freight/de_freight-gallery-script.js">
                     </script>
-                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-11" id="de_freight_gallery">
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-17" id="de_freight_gallery">
                         <ul id="carousel">
                             <li class="slide">
                                 <h3 class="caption h-center-a">
@@ -393,7 +815,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="summary col-22 col-sm-19 col-md-17 col-lg-11">
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
                         <h3>
                             Summary
                         </h3>
@@ -474,7 +896,7 @@
                 <div class="expand-area row g-0 justify-content-center align-items-center">
                     <script src="projects/modded-keyboard/modded-keyboard-gallery-script.js">
                     </script>
-                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-11" id="modded_keyboard_gallery">
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-17" id="modded_keyboard_gallery">
                         <ul id="carousel">
                             <li class="slide">
                                 <h3 class="caption h-center-a">
@@ -564,7 +986,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="summary col-22 col-sm-19 col-md-17 col-lg-11">
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
                         <h3>
                             Summary
                         </h3>
@@ -659,7 +1081,7 @@
                 <div class="expand-area row g-0 justify-content-center align-items-center">
                     <script src="projects/ohgkb/ohgkb-gallery-script.js">
                     </script>
-                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-11" id="ohgkb_gallery">
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-17" id="ohgkb_gallery">
                         <ul id="carousel">
                             <li class="slide">
                                 <h3 class="caption h-center-a">
@@ -731,7 +1153,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="summary col-22 col-sm-19 col-md-17 col-lg-11">
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
                         <h3>
                             Summary
                         </h3>
@@ -783,10 +1205,10 @@
             </div>
         </div>
         
-        <div class="container project" id="smart-deadbolt">
+        <div class="container project" id="smart-backdoor-auth-panel">
             <div class="metadata row justify-content-center g-0">
                 <div class="data dates col-24 col-md">
-                    Dates: Oct '21 - Present
+                    Dates: Nov '21 - Present
                 </div>
                 <div class="data status-active col-24 col-md">
                     Status: Active
@@ -799,70 +1221,61 @@
                 <div class="row justify-content-between g-0">
                     <div class="header-container col-22 offset-1">
                         <h3 class="title">
-                            Smart IoT Deadbolt Controller
+                            Smart Backdoor Auth Panel
                             <h4 class="description">
-                                Smart deadbolt controller leveraging MySensors for connectivity running on an Arduino pro micro which manipulates a TT motor to turn a standard deadbolt.
+                                3D-Printed access panel that will provide authentication for my custom smart deadbolt using either RFID, fingerprints, or a keypad
                             </h4>
                         </h3>
                     </div>
                 </div>
                 <div class="button-container row justify-content-center">
-                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-smart-deadbolt" data-bs-toggle="collapse">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-smart-backdoor-auth-panel" data-bs-toggle="collapse">
                         <p>
                             Expand
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="collapser collapse" id="collapser-smart-deadbolt">
+            <div class="collapser collapse" id="collapser-smart-backdoor-auth-panel">
                 <div class="expand-area row g-0 justify-content-center align-items-center">
-                    <script src="projects/smart-deadbolt/smart-deadbolt-gallery-script.js">
+                    <script src="projects/smart-backdoor-auth-panel/smart-backdoor-auth-panel-gallery-script.js">
                     </script>
-                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-11" id="smart_deadbolt_gallery">
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-17" id="smart_backdoor_auth_panel_gallery">
                         <ul id="carousel">
                             <li class="slide">
                                 <h3 class="caption h-center-a">
                                     <div>
-                                        Assembly of 3D Printed Components
+                                        3D Model of Auth Panel w/ Cover Open
                                     </div>
                                 </h3>
-                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/full_assembly_1.jpg');">
+                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_open.png');">
                                 </div>
                             </li>
                             <li class="slide">
                                 <h3 class="caption h-center-a">
                                     <div>
-                                        Assembly of 3D Printed Components
+                                        3D Model of Auth Panel w/ Clear Cover
                                     </div>
                                 </h3>
-                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/full_assembly_2.jpg');">
+                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_clear_cover.png');">
                                 </div>
                             </li>
                             <li class="slide">
                                 <h3 class="caption h-center-a">
                                     <div>
-                                        View w/ Clear Sides
+                                        3D Model of the Waterproofing Seals/O-Rings
                                     </div>
                                 </h3>
-                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/full_assembly_clear_sides_1.jpg');">
+                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_waterproofing.png');">
                                 </div>
                             </li>
                             <li class="slide">
                                 <h3 class="caption h-center-a">
                                     <div>
-                                        Exploded View
+                                        3D Model of Auth Panel w/ Cover Closed
                                     </div>
                                 </h3>
-                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/full_assembly_expanded_1.jpg');">
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <h3 class="caption h-center-a">
-                                    <div>
-                                        Exploded View w/ Clear Sides &amp; Bottom
-                                    </div>
-                                </h3>
-                                <div class="content cov" style="background-image: url('projects/smart-deadbolt/image_gallery/full_assembly_expanded_2.jpg');">
+                                <div class="content cov" style="background-image: url('projects/smart-backdoor-auth-panel/image_gallery/v1/auth_panel_v1_closed.png');">
                                 </div>
                             </li>
                         </ul>
@@ -881,42 +1294,307 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="summary col-22 col-sm-19 col-md-17 col-lg-11">
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
                         <h3>
                             Summary
                         </h3>
                         <ul>
                             <li>
-                                Fully custom enclosure and mounting bracket designed by yours truly in Autodesk Inventer and 3D printed in-house
+                                Leverages NRF24 radio modules to connect to my MySensors network which is controlled by my Home Assistant smart home ecosystem
                             </li>
                             <li>
-                                Tooless, modular design allowed for rapid prototyping and iterative design
+                                Features several methods of authentication that allow for various levels of convenience and security, but regardless of which methods are used, two must be used for any given authentication attempt, creating a 2FA system to significantly enhance security.
                             </li>
                             <li>
-                                Custom designed 3D printed components: Enclosure, door mounting system, motor mount, gear adapter for deadbolt thumb latch, and gear driven by motor with hole for potentiometer
+                                At certain hours of the day, such as 2am to 6am, can enhance security requirements by disabling some less secure authentication methods
                             </li>
                             <li>
-                                Specially designed to not require any modification to existing deadbolt or door (since this is being installed in an apartment)
-                            </li>
-                            <li>
-                                Will be controlled by my Home Assistant smart home ecosystem using secure authentication via my
-                                <a href="https://github.com/a-dubs/secure-smart-apt-entry-panel">
-                                    Secure Smart Apartment Entry Panel
-                                </a>
+                                Authentication methods will include:
                                 <ul>
                                     <li>
-                                        Leverages NRF24 radio modules to connect to my MySensors network which is controlled by my Home Assistant smart home ecosystem
+                                        10+ digit pin entered via physical keypad
+                                    </li>
+                                    <li>
+                                        rfid key
+                                    </li>
+                                    <li>
+                                        fingerprint scanner
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                     <div class="btn btn-dark" id="c2a">
-                        <a href="http://github.com/a-dubs/smart-deadbolt" target="_blank">
+                        <a href="http://github.com/a-dubs/smart-backdoor-auth-panel" target="_blank">
                             See Full Project on GitHub
                         </a>
                     </div>
-                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-deadbolt" data-bs-toggle="collapse">
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-backdoor-auth-panel" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container project" id="smart-bedroom-leds">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: Jan '22 - Present
+                </div>
+                <div class="data status-active col-24 col-md">
+                    Status: Active
+                </div>
+                <div class="data progress-functional col-24 col-md">
+                    Progress: Functional
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            Bedroom Smart Home Arduino Controller
+                            <h4 class="description">
+                                Arduino that connects to my smart home via RF as controller for LED strips, speakers, and more
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-smart-bedroom-leds" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-smart-bedroom-leds">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/smart-bedroom-leds/smart-bedroom-leds-gallery-script.js">
+                    </script>
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
+                        <h3 style="text-align:center">
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                Integrates perfectly with my
+                                <a href="https://github.com/a-dubs/smart-home">
+                                    Smart Home Ecosystem
+                                </a>
+                                via RF module using the MySensors protocol, allowing for easy control from my phone or any browser.
+                            </li>
+                            <li>
+                                Manipulates 3 zones of LED strips, allowing for individual control of RGB color, brightness, and on/off per zone
+                            </li>
+                            <li>
+                                Controls an 20 year old Sony soundbar &amp; subwoofer combo by sending IR codes via an IR blaster, allowing for control of volume and input selection without need for a remote.
+                            </li>
+                            <li>
+                                Detects motion in room and reports this information for use with presence detection and other automations.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/smart-bedroom-leds" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-smart-bedroom-leds" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container project" id="spotify-api-projects">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: Oct '19 - Present
+                </div>
+                <div class="data status-active col-24 col-md">
+                    Status: Active
+                </div>
+                <div class="data progress-functional col-24 col-md">
+                    Progress: Functional
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            Custom Spotify API Interface &amp; Projects
+                            <h4 class="description">
+                                A monorepo for the custom interface I made for the Spotify web api and the various projects and scripts that leverage it
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-spotify-api-projects" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-spotify-api-projects">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/spotify-api-projects/spotify-api-projects-gallery-script.js">
+                    </script>
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
+                        <h3 style="text-align:center">
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                Created custom interface for the spotify API that provides a simplified, easy to use library for leveraging various functionality of the spotify API.
+                                <ul>
+                                    <li>
+                                        Various python libraries and packages already exist for the spotify API, but after using them for a few months, I knew I wanted to make my own
+                                    </li>
+                                    <li>
+                                        Reasons for making my own DIY spotify library:
+                                        <ul>
+                                            <li>
+                                                The existing libraries felt too bloated
+                                            </li>
+                                            <li>
+                                                Designing and implementing a custom interface from scratch would allow for me to shape it and customize it to fit my needs and use cases
+                                            </li>
+                                            <li>
+                                                I wanted to have my own way of handling authentication for the Spotify web API
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        The "Spotify Jukebox" project is a working concept of a web-app that will act as simplified Spotify app, centered around sharing a common queue of music, the "jukebox", if you will, so that 2 or more users can act as DJ
+                                        <ul>
+                                            <li>
+                                                A proof of concept of the jukebox queue has been implemented in the form of a simple CLI
+                                            </li>
+                                            <li>
+                                                The next step will be to build an API to handle the basic functions of the juxebox and then build a web-app as a front end that leverages this API
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/spotify-api-projects" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-spotify-api-projects" data-bs-toggle="collapse">
+                        <div class="txt-box">
+                            Collapse
+                            <div class="bg h-center-a">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container project" id="tetris-ai-simulation">
+            <div class="metadata row justify-content-center g-0">
+                <div class="data dates col-24 col-md">
+                    Dates: Oct '20 - Dec '20
+                </div>
+                <div class="data status-archived col-24 col-md">
+                    Status: Archived
+                </div>
+                <div class="data progress-complete col-24 col-md">
+                    Progress: Complete
+                </div>
+            </div>
+            <div class="collapse-area">
+                <div class="row justify-content-between g-0">
+                    <div class="header-container col-22 offset-1">
+                        <h3 class="title">
+                            Tetris Min-Max A.I. &amp; Custom Simulation
+                            <h4 class="description">
+                                Creating a simulation of tetris from scratch to host/run different AI that I developed, and is also playable by a user via keyboard inputs.
+                            </h4>
+                        </h3>
+                    </div>
+                </div>
+                <div class="button-container row justify-content-center">
+                    <div class="expand-btn btn btn-outline-dark" data-bs-target="#collapser-tetris-ai-simulation" data-bs-toggle="collapse">
+                        <p>
+                            Expand
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="collapser collapse" id="collapser-tetris-ai-simulation">
+                <div class="expand-area row g-0 justify-content-center align-items-center">
+                    <script src="projects/tetris-ai-simulation/tetris-ai-simulation-gallery-script.js">
+                    </script>
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-17" id="tetris_ai_simulation_gallery">
+                        <ul id="carousel">
+                            <li class="slide">
+                                <h3 class="caption h-center-a">
+                                    <div>
+                                        AI Playing The Tetris Simulation
+                                    </div>
+                                </h3>
+                                <div class="content cov" style="background-image: url('projects/tetris-ai-simulation/image_gallery/simulation_demo.gif');">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="gallery-btn notselected" id="left">
+                            <img class="vert_spacer" id="icon" src="l-cheveron.png"/>
+                            <div class="icon_bg">
+                            </div>
+                        </div>
+                        <div class="gallery-btn notselected" id="right">
+                            <img class="vert_spacer" id="icon" src="r-chevron.png"/>
+                            <div class="icon_bg">
+                            </div>
+                        </div>
+                        <div class="island" id="bar_island">
+                            <ul id="bar_island_ul">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
+                        <h3>
+                            Summary
+                        </h3>
+                        <ul>
+                            <li>
+                                Created an accurate and faithful Tetris simulation using Python and the Tkinter interface that is playable by the user while also easily and seemlessly interfacing with the AI
+                            </li>
+                            <li>
+                                Goal was to create a basic single agent online AI that can clear several levels on average as well as score well before inevitably losing
+                            </li>
+                            <li>
+                                Two different AIs were created, trained, and evaluated to examine if increased complexity in the AI is directly related to improved performance
+                            </li>
+                            <li>
+                                Overall, both AIs functioned relatively well, but were wildly inconsistent - About 1 in 10 trials would result in the AI failing to even score a single point or it would score in the hundreds of thousands, clearing anywhere from levels 9-13
+                            </li>
+                            <li>
+                                In the end, the less complex algorithm was faster with near identical performance
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn btn-dark" id="c2a">
+                        <a href="http://github.com/a-dubs/tetris-ai-simulation" target="_blank">
+                            See Full Project on GitHub
+                        </a>
+                    </div>
+                    <div class="col-24 secondary-collapse-btn" data-bs-target="#collapser-tetris-ai-simulation" data-bs-toggle="collapse">
                         <div class="txt-box">
                             Collapse
                             <div class="bg h-center-a">
@@ -962,7 +1640,7 @@
                 <div class="expand-area row g-0 justify-content-center align-items-center">
                     <script src="projects/under-couch-dorm-subwoofer/under-couch-dorm-subwoofer-gallery-script.js">
                     </script>
-                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-11" id="under_couch_dorm_subwoofer_gallery">
+                    <div class="gallery col-24 col-sm-20 col-md-18 col-lg-17" id="under_couch_dorm_subwoofer_gallery">
                         <ul id="carousel">
                             <li class="slide">
                                 <h3 class="caption h-center-a">
@@ -1052,7 +1730,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="summary col-22 col-sm-19 col-md-17 col-lg-11">
+                    <div class="summary col-22 col-sm-19 col-md-18 col-lg-17">
                         <h3>
                             Summary
                         </h3>
@@ -1165,7 +1843,7 @@
             <div id="collapser-nexus-website" class="collapser collapse">
                 <div class="expand-area row g-0 justify-content-center align-items-center">
                     <script src="projects/nexus-website/nexus-website-gallery-script.js"></script>
-                    <div id="nexus_website_gallery" class="gallery col-24 col-sm-20 col-md-18 col-lg-11">
+                    <div id="nexus_website_gallery" class="gallery col-24 col-sm-20 col-md-18 col-lg-17">
                         <ul id="carousel">
                             <li class="slide">
                                 <h3 class="caption h-center-a">
@@ -1240,7 +1918,7 @@
                         </div>
                     </div>
 
-                    <div class="summary col-22 col-sm-19 col-md-17 col-lg-11">
+                    <div class="summary col-22 col-sm-19 col-md-17 col-lg-17">
                         <h3>Summary</h3>
                         <ul>
                             <li> My first full-fledged website. First commercial website, first fully responsive
@@ -1282,8 +1960,17 @@
         </div>
 
 
-
-
+        <div class="container" id="footer">
+            <h3>
+                Editor's Note
+            </h3>
+            <p>
+                This website was designed and created from scratch by yours truly using HTML, CSS, Javascript,
+                Bootstrap, and jQuery. The content of this website was automatically generated from my GitHub by a
+                Python script I wrote which allows for this site to be effortlessly maintained and updated, all from
+                my GitHub. 
+            </p>
+        </div>
 
 
 

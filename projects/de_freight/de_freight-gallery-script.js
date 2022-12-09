@@ -5,7 +5,8 @@ function de_freight_gallery() {
     var animationduration =600;
     // Comment the line below out if you do not want the automatic slide changing 
     var currentslide = 1;
-    var de_freight_gallery_timer = setInterval(goToSlide, 4000);
+    var de_freight_gallery_hidden = $("#de_freight_gallery").is(":visible");
+    var de_freight_gallery_timer = setInterval(goToSlide, 5000);
     // edit the number above to change how often (in milliseconds) the slides change
     var tempbar = document.createElement("li");
     tempbar.className = "bar";
@@ -29,30 +30,47 @@ function de_freight_gallery() {
 
     // jump to specified slide number (including clones)
     function goToSlide(slideNumber = currentslide + 1) {
-     if(slideNumber>numofslides){
-			  slideNumber = 1;
-		  }
-        if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
-            clearInterval(de_freight_gallery_timer);
-            de_freight_gallery_timer = setInterval(goToSlide, 5000);
-            oldslide = currentslide;
-            currentslide = slideNumber;
-            jQuery(slides[oldslide - 1]).css("z-index", 3);
-            jQuery(slides[currentslide - 1]).css("z-index", 2);
-
-            jQuery(slides[currentslide - 1]).css("width", slidewidth);
-            jQuery(slides[currentslide - 1]).css({
-                "opacity": 1
-            });
-            jQuery(slides[oldslide - 1]).animate({
-                "opacity": 0
-            }, animationduration, "easeOutCubic");
-
-            setTimeout(function() {
-                jQuery(slides[oldslide - 1]).css("width", 0);
-            }, animationduration, "easeOutCubic")
-            updateBars(currentslide)
+        if ($("#de_freight_gallery").is(":visible")) {
+            
+            if (de_freight_gallery_hidden)
+            {
+                clearInterval(de_freight_gallery_timer);
+                de_freight_gallery_timer = setInterval(goToSlide, 5000);
+                de_freight_gallery_hidden = false;
+            }    
+            else {
+                if (slideNumber > numofslides) {
+                    slideNumber = 1;
+                }
+                if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
+                    clearInterval(de_freight_gallery_timer);
+                    de_freight_gallery_timer = setInterval(goToSlide, 5000);
+                    oldslide = currentslide;
+                    currentslide = slideNumber;
+                    jQuery(slides[oldslide - 1]).css("z-index", 3);
+                    jQuery(slides[currentslide - 1]).css("z-index", 2);
+    
+                    jQuery(slides[currentslide - 1]).css("width", slidewidth);
+                    jQuery(slides[currentslide - 1]).css({
+                        "opacity": 1
+                    });
+                    jQuery(slides[oldslide - 1]).animate({
+                        "opacity": 0
+                    }, animationduration, "easeOutCubic");
+    
+                    setTimeout(function () {
+                        jQuery(slides[oldslide - 1]).css("width", 0);
+                    }, animationduration, "easeOutCubic")
+                    updateBars(currentslide)
+                }
+            }
         }
+        else {
+            de_freight_gallery_hidden = true;
+            clearInterval(de_freight_gallery_timer);
+            de_freight_gallery_timer = setInterval(goToSlide, 100);
+        }
+
     }
 
     var oldslide = 1;
@@ -72,7 +90,8 @@ function de_freight_gallery() {
     })
 
     // click button to advance to the left
-    $("#de_freight_gallery .gallery-btn#left").click(function() {
+    $("#de_freight_gallery .gallery-btn#left").click(function () {
+        de_freight_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (currentslide == 1) {
                 goToSlide(numofslides)
@@ -83,7 +102,8 @@ function de_freight_gallery() {
     });
 
     // click button to advance to the right
-    $("#de_freight_gallery .gallery-btn#right").click(function() {
+    $("#de_freight_gallery .gallery-btn#right").click(function () {
+        de_freight_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (currentslide == numofslides) {
                 goToSlide(1)
@@ -145,7 +165,8 @@ function de_freight_gallery() {
 
 
     // change highlighted bar & move slideshow
-    $("#de_freight_gallery .bar").click(function() {
+    $("#de_freight_gallery .bar").click(function () {
+        de_freight_gallery_hidden = false;
         if (!$(jQuery(slides[oldslide - 1])).is(':animated')) {
             if (!$(this).hasClass("selected")) {
                 $(this).toggleClass("selected")
